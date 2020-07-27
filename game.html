@@ -15,7 +15,7 @@
   <script src="js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
-  <div class="mainContent">
+  <div class="mainContent game_outbg">
     <div class="nav">
       <div class="container">
         <div class="logo">
@@ -52,7 +52,7 @@
         </a></li>
       </ul>
     </div>
-    <div class="mainContainer">
+    <div class="mainContainer game_bg">
       <div id="myGender" class="genderCard">
         <h5>您的性別是?</h5>
         <div class="genderBody">
@@ -71,19 +71,19 @@
             <img src="img/question/question_left.png" alt="">
           </div>
           <div class="genderImg ge_card01 activeGender">
-            <!-- <img src="img/gender/male/rema_sinyi_photo.jpg" alt=""> -->
+            <img src="img/gender/male/rema_sinyi_photo.jpg" alt="">
           </div>
           <div class="genderImg ge_card02 waitGender">
-            <!-- <img src="img/gender/male/SinyiGlobal_photo.jpg" alt=""> -->
+            <img src="img/gender/male/SinyiGlobal_photo.jpg" alt="">
           </div>
           <div class="genderImg ge_card03 waitGender">
-            <!-- <img src="img/gender/male/tokyo_sinyi_photo.jpg" alt=""> -->
+            <img src="img/gender/male/tokyo_sinyi_photo.jpg" alt="">
           </div>
           <div class="genderImg ge_card04 waitGender">
-            <!-- <img src="img/gender/male/xinyikf_photo.jpg" alt=""> -->
+            <img src="img/gender/male/xinyikf_photo.jpg" alt="">
           </div>
           <div class="genderImg ge_card05 waitGender">
-            <!-- <img src="img/gender/male/yo_woo_photo.jpg" alt=""> -->
+            <img src="img/gender/male/yo_woo_photo.jpg" alt="">
           </div>
           <div class="rightImg">
             <img src="img/question/question_right.png" alt="">
@@ -211,7 +211,7 @@
       <div id="famaleQuest" class="topic">
         <div class="topicImg">
           <div class="leftImg">
-            <img src="img/noPrize.png" alt="">
+            <img src="img/question/question_left.png" alt="">
           </div>
           <div class="genderImg ge_card01 activeGender">
             <img src="img/gender/male/rema_sinyi_photo.jpg" alt="">
@@ -229,7 +229,7 @@
             <img src="img/gender/male/yo_woo_photo.jpg" alt="">
           </div>
           <div class="rightImg">
-            <img src="img/noPrize.png" alt="">
+            <img src="img/question/question_right.png" alt="">
           </div>
         </div>
         <div class="topicContent">
@@ -352,7 +352,10 @@
       </div>
       <div class="check-block">
         <div class="jumbotron">
-          <h1>測驗結束</h1>
+          <img src="img/result_title.png" alt="">
+        </div>
+        <div class="resiltImg">
+          <img src="img/maxresdefault.jpg" alt="">
         </div>
         <div class="resultContent">
           <div class="myBtn get-result"><img src="img/fb_share.png" alt=""></div>
@@ -369,6 +372,7 @@
   var getQuest = '';
   var realAnswer = '';
 
+  // 選擇男女
   function nextQuest(x){
     $('#myGender').fadeOut(500);
     if(x == 1){
@@ -383,6 +387,7 @@
       },1000)
     }
   }
+  // 下一題
   function changeQuest(y,z){
     if(y == 1 && z == 1){
       getQuest = '1';
@@ -444,6 +449,7 @@
       },500)
     }
   }
+  // 重新開始
   $('.restart').on('click', function(){
     getGender = '';
     getQuest = '';
@@ -457,13 +463,14 @@
       $('#myGender').fadeIn(500);
     },500)
   })
-  $('.get-result').on('click', function(){
-    $('.check-block').fadeOut(500);
-    $('.myGender').text(getGender);
-    $('.myans1').text(getQuest);
-    setTimeout(function(){
-      $('.result-block').fadeIn(500);
-    },500)
-  });
+  // 
+  // $('.get-result').on('click', function(){
+  //   $('.check-block').fadeOut(500);
+  //   $('.myGender').text(getGender);
+  //   $('.myans1').text(getQuest);
+  //   setTimeout(function(){
+  //     $('.result-block').fadeIn(500);
+  //   },500)
+  // });
 </script>
 </html>
