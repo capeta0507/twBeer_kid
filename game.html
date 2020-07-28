@@ -351,11 +351,11 @@
         </div>
       </div>
       <div class="check-block">
-        <div class="jumbotron">
-          <img src="img/result_title.png" alt="">
+        <div class="checkTitle">
+          <img src="img/age/logom.png" alt="">
         </div>
-        <div class="resiltImg">
-          <div class="myBtn get-result"><img src="img/fb_share.png" alt=""></div>
+        <div class="checkButton">
+          <div class="myBtn get-result"><img src="img/makeResult.png" alt=""></div>
         </div>
       </div>
       <div class="loading-block">
@@ -369,7 +369,7 @@
           <img src="img/maxresdefault.jpg" alt="">
         </div>
         <div class="resultContent">
-          <div class="myBtn get-result"><img src="img/fb_share.png" alt=""></div>
+          <div class="myBtn share-result"><img src="img/fb_share.png" alt=""></div>
           <div class="myBtn restart"><img src="img/restart.png" alt=""></div>
         </div>
       </div>
@@ -477,7 +477,9 @@
   
   $('.get-result').on('click', function(){
     $('.check-block').fadeOut(500);
-    $('.loading-block').fadeIn(300);
+    setTimeout(function(){
+      $('.loading-block').fadeIn(300);
+    },500)
     setTimeout(function(){
       $('.loading-block').fadeOut(500);
       setTimeout(function(){
