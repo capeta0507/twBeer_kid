@@ -355,6 +355,17 @@
           <img src="img/result_title.png" alt="">
         </div>
         <div class="resiltImg">
+          <div class="myBtn get-result"><img src="img/fb_share.png" alt=""></div>
+        </div>
+      </div>
+      <div class="loading-block">
+        <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> 
+      </div>
+      <div class="result-block">
+        <div class="jumbotron">
+          <img src="img/result_title.png" alt="">
+        </div>
+        <div class="resiltImg">
           <img src="img/maxresdefault.jpg" alt="">
         </div>
         <div class="resultContent">
@@ -463,14 +474,16 @@
       $('#myGender').fadeIn(500);
     },500)
   })
-  // 
-  // $('.get-result').on('click', function(){
-  //   $('.check-block').fadeOut(500);
-  //   $('.myGender').text(getGender);
-  //   $('.myans1').text(getQuest);
-  //   setTimeout(function(){
-  //     $('.result-block').fadeIn(500);
-  //   },500)
-  // });
+  
+  $('.get-result').on('click', function(){
+    $('.check-block').fadeOut(500);
+    $('.loading-block').fadeIn(300);
+    setTimeout(function(){
+      $('.loading-block').fadeOut(500);
+      setTimeout(function(){
+        $('.result-block').fadeIn(500);
+      },500)
+    },2500)
+  });
 </script>
 </html>
