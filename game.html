@@ -54,16 +54,28 @@
     </div>
     <div class="mainContainer game_bg">
       <div id="myGender" class="genderCard">
-        <h5>您的性別是?</h5>
         <div class="genderBody">
-          <div class="iptImg" onclick="nextQuest(1)">
-            <img src="img/male.png" alt="">
+          <div class="genderSelect">
+            <img src="img/gender/genderTitle.png" alt="">
           </div>
-          <div class="iptImg" onclick="nextQuest(2)">
-            <img src="img/female.png" alt="">
+          <div class="genderSelect" onclick="nextQuest(1)">
+            <img src="img/gender/maleImg.png" alt="">
+          </div>
+          <div class="genderSelect">
+            <img src="img/gender/male.png" alt="">
+          </div>
+          <div class="genderSelect" onclick="nextQuest(2)">
+            <img src="img/gender/femaleImg.png" alt="">
+          </div>
+          <div class="genderSelect">
+            <img src="img/gender/female.png" alt="">
           </div>
         </div>
+        <div class="genderRight">
+          <img src="img/gender/home_logo.png" alt="">
+        </div>
       </div>
+      <div class="game_bgDown"></div>
       <!-- 男 -->
       <div id="maleQuest" class="topic">
         <div class="topicImg">

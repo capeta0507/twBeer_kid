@@ -360,7 +360,7 @@ footer{
 	height: 12vh;
 	display: block;
 	background-color: #000;
-	/* background-image: url(../images/footer_1920.jpg); */
+	background-image: url(../images/footer_1920.png);
 	background-size: 100% 80%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -379,26 +379,26 @@ footer{
 }
 @media only screen and (max-width: 1919px){
 	footer {
-		background-image: url(../img/footer_1680.jpg);
+		background-image: url(../img/footer_1680.png);
 		background-size: 98% 80%;
 	}
 }
 @media only screen and (max-width: 1200px){
 	footer {
-		background-image: url(../img/footer_1140.jpg);
+		background-image: url(../img/footer_1140.png);
 		background-size: 98% 80%;
 	}
 }
 @media only screen and (max-width: 991px){
 	footer {
-		background-image: url(../img/footer_m.jpg);
-		background-size: 98% 90%;
+		background-image: url(../img/footer_m.png);
+		background-size: 98% 100%;
 	}
 }
 @media only screen and (max-width: 768px){
 	footer {
-		background-image: url(../img/footer_m.jpg);
-		background-size: 100% 80%;
+		background-image: url(../img/footer_m.png);
+		background-size: 100% 110%;
 	}
 }
 /* game */
@@ -414,13 +414,21 @@ footer{
     position: relative;
 }
 .genderCard{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 18vh;
+    justify-content: space-between;
+}
+.genderSelect{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.genderSelect img{
     width: 100%;
-    /* border: 2px solid black;
-    padding: 10px; */
-    margin-top: 70px;
-    /* position: absolute;
-    bottom: 0;
-    left: 0; */
+    height: auto;
 }
 .iptImg{
     width: 48%;
@@ -433,6 +441,15 @@ footer{
     height: auto;
 }
 .genderBody{
+    width: 48%;
+    border: 1px solid black;
+    display: block;
+    padding-top: 10px;
+}
+.genderRight{
+    width: 48%;
+}
+.genderRight img{
     width: 100%;
 }
 .topic{
@@ -544,6 +561,16 @@ footer{
     background-position-y: 5%;
 }
 .wait_bg{
+    background-image: url(../img/game_bg.png);
+    background-repeat: repeat-x;
+    background-size: 120%;
+    background-position-y: -8%;
+}
+.game_bgDown{
+    width: 100%;
+    position: absolute;
+    height: 100px;
+    bottom: 10vh;
     background-image: url(../img/game_bg.png);
     background-repeat: repeat-x;
     background-size: 120%;
@@ -765,13 +792,13 @@ footer{
         position: relative;
     }
     .genderCard{
-        width: 100%;
-        /* border: 2px solid black;
-        padding: 10px; */
-        margin-top: 70px;
-        /* position: absolute;
-        bottom: 0;
-        left: 0; */
+        width: 90%;
+        margin-top: 18vh;
+    }
+    .genderSelect{
+        width: 80%;
+        height: auto;
+        cursor: pointer;
     }
     .iptImg{
         width: 48%;
@@ -780,7 +807,7 @@ footer{
         cursor: pointer;
     }
     .genderBody{
-        width: 100%;
+        width: 50%;
     }
     .topic{
         width: 100%;
