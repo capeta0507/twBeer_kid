@@ -433,7 +433,7 @@ footer{
 .iptImg{
     width: 48%;
     height: auto;
-    margin: 10px 0;
+    margin: 5px 0;
     cursor: pointer;
 }
 .iptImg img{
@@ -507,7 +507,7 @@ footer{
 }
 .topicContent{
     width: 100%;
-    height: 250px;
+    height: 230px;
     background-color: black;
     position: absolute;
     bottom: 11vh;
@@ -605,8 +605,8 @@ footer{
 }
 .resultContent{
     width: 100%;
-    height: 175px;
-    padding-top: 10px;
+    height: auto;
+    padding: 10px 0;
     background-color: black;
     position: absolute;
     bottom: 11vh;
@@ -615,7 +615,7 @@ footer{
 .resultContent .myBtn{
     width: 70%;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-bottom: 15px;
     display: block;
 }
 .resultContent .myBtn img{
@@ -803,7 +803,7 @@ footer{
     .iptImg{
         width: 48%;
         height: auto;
-        margin: 10px 0;
+        margin: 5px 0;
         cursor: pointer;
     }
     .genderBody{
@@ -852,7 +852,7 @@ footer{
     }
     .topicContent{
         width: 100%;
-        height: 250px;
+        height: 230px;
         background-color: black;
         position: absolute;
         bottom: 11vh;
@@ -912,8 +912,8 @@ footer{
     }
     .resultContent{
         width: 100%;
-        height: 175px;
-        padding-top: 10px;
+        height: auto;
+        padding-top: 30px;
         background-color: black;
         position: absolute;
         bottom: 11vh;
@@ -922,7 +922,7 @@ footer{
     .resultContent .myBtn{
         width: 70%;
         margin: 0 auto;
-        margin-top: 20px;
+        margin-bottom: 15px;
         display: block;
     }
     .resiltImg{
