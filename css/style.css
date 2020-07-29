@@ -115,15 +115,15 @@ body{
 	position: absolute;
 	top: 0;
 	right: 0;
-	border-bottom:63px solid black;
+	border-bottom:62px solid black;
 	border-left:35px solid transparent;
 }
 /* btn */
 .menu {
 	position: relative;
-	display:  inline-block;
 	width: 30px;
-	height: 30px;
+    height: 30px;
+    display: none;
 }
 .menu span {
 	margin: 0 auto;
@@ -202,6 +202,15 @@ body{
     right: 0;
     z-index: 1;
 }
+.icon .menu-1{
+    width: 40px;
+}
+.icon .menu-2{
+    width: 120px;
+}
+.icon .menu-3{
+    width: 80px;
+}
 .icon > a{
 	width: 30px;
 	height: 30px;
@@ -275,7 +284,13 @@ body{
     margin: 0 auto;
     padding-top: 150px;
     padding-bottom: 15vh;
-
+}
+.mbAgeContain{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 15vh;
 }
 /* waiting */
 .waitingLogo{
@@ -322,6 +337,19 @@ body{
     width: 100%;
     height: auto;
 }
+.ageLink{
+    width: 60%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.ageLink a{
+    width: 45%;
+}
+.ageLink a img{
+    width: 100%;
+    height: auto;
+}
 .ageBar{
     width: 100%;
     position: relative;
@@ -337,7 +365,7 @@ body{
     position: fixed;
     top: 0;
     z-index: 1000;
-    display: none;
+    /* display: none; */
 }
 .loadText{
     width: 90%;
@@ -360,7 +388,7 @@ footer{
 	height: 12vh;
 	display: block;
 	background-color: #000;
-	background-image: url(../images/footer_1920.png);
+	background-image: url(../img/footer_1920.png);
 	background-size: 100% 80%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -464,15 +492,15 @@ footer{
     position: relative;
 }
 .topicImg .genderImg{
-    width: 80%;
+    width: 100%;
     position: absolute;
     /* z-index: 1; */
-    margin-top: 10vh;
+    margin-top: 1vh;
     transition: all .7s;
 }
 .activeGender{
     top: 10%;
-    left: 10%;
+    left: 0%;
 }
 .waitGender{
     top: 10%;
@@ -487,7 +515,7 @@ footer{
     height: auto;
 }
 .topicImg .leftImg{
-    width: 25%;
+    width: 23%;
     position: absolute;
     top: 10%;
     left: 2%;
@@ -497,7 +525,7 @@ footer{
     height: auto;
 }
 .topicImg .rightImg{
-    width: 25%;
+    width: 23%;
     position: absolute;
     top: 10%;
     right: 2%;
@@ -525,7 +553,8 @@ footer{
     text-align: center;
 }
 .topicBody{
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -649,6 +678,9 @@ footer{
         padding: 5px 0;
         margin-left: 10px;
     }
+    .menu {
+        display:  inline-block;
+    }
     .icon{
         display: flex;
         /* float: right; */
@@ -658,6 +690,9 @@ footer{
         top: 0;
         right: 0;
         z-index: 1;
+    }
+    .icon .menu-1, .icon .menu-2, .icon .menu-3{
+        display: none;
     }
     .icon > a{
         width: 30px;
@@ -678,7 +713,7 @@ footer{
         height: 100%;
         padding: 0;
         position: fixed;
-        top: 63px;
+        top: 62px;
         padding-top: 5vh;
         z-index: 900;
     }
@@ -724,7 +759,13 @@ footer{
         margin: 0 auto;
         padding-top: 90px;
         padding-bottom: 15vh;
-    
+    }
+    .mbAgeContain{
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding-top: 70px;
+        padding-bottom: 15vh;
     }
     .wait_bg{
         background-image: url(../img/game_bg.png);
@@ -776,7 +817,7 @@ footer{
         position: fixed;
         top: 0;
         z-index: 1000;
-        display: none;
+        /* display: none; */
     }
     .loadText{
         width: 90%;
@@ -835,15 +876,15 @@ footer{
         position: relative;
     }
     .topicImg .genderImg{
-        width: 80%;
+        width: 100%;
         position: absolute;
         /* z-index: 1; */
-        margin-top: 10vh;
+        margin-top: 1vh;
         transition: all .7s;
     }
     .activeGender{
         top: 10%;
-        left: 10%;
+        left: 0%;
     }
     .waitGender{
         top: 10%;
@@ -854,13 +895,13 @@ footer{
         left: -106%;
     }
     .topicImg .leftImg{
-        width: 25%;
+        width: 23%;
         position: absolute;
         top: 10%;
         left: 2%;
     }
     .topicImg .rightImg{
-        width: 25%;
+        width: 23%;
         position: absolute;
         top: 10%;
         right: 2%;
@@ -884,7 +925,7 @@ footer{
         text-align: center;
     }
     .topicBody{
-        width: 100%;
+        width: 90%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
