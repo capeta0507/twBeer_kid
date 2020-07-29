@@ -615,7 +615,7 @@ footer{
     bottom: 10vh;
     background-image: url(../img/game_bg.png);
     background-repeat: repeat-x;
-    background-size: 55%;
+    background-size: 45%;
     background-position-y: -8%;
     /* z-index: -1; */
 }
@@ -1043,10 +1043,10 @@ footer{
 }
 @media screen and (max-width: 500px){
     .game_outbg{
-        background-position-y: 3%;
+        background-position-y: 2%;
     }
     .game_bgDown{
-        height: 100px;
-        background-size: 120%;
+        height: 80px;
+        background-size: 100%;
     }
 }
