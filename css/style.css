@@ -433,16 +433,17 @@ footer{
 
 .mainContainer{
     width: 100%;
-    max-width: 500px;
+    max-width: 1200px;
     min-height: 100vh;
     /* padding: 0 10px; */
-    background-color: #d1d1d1;
+    /* background-color: #d1d1d1; */
+    background-color: #C9CACA;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
 }
 .genderCard{
-    width: 90%;
+    width: 40%;
     margin: 0 auto;
     display: flex;
     margin-top: 18vh;
@@ -460,7 +461,7 @@ footer{
     height: auto;
 }
 .iptImg{
-    width: 48%;
+    width: 16%;
     height: auto;
     margin: 5px 0;
     cursor: pointer;
@@ -492,7 +493,7 @@ footer{
     position: relative;
 }
 .topicImg .genderImg{
-    width: 100%;
+    width: 50%;
     position: absolute;
     /* z-index: 1; */
     margin-top: 1vh;
@@ -500,7 +501,7 @@ footer{
 }
 .activeGender{
     top: 10%;
-    left: 0%;
+    left: 25%;
 }
 .waitGender{
     top: 10%;
@@ -515,7 +516,7 @@ footer{
     height: auto;
 }
 .topicImg .leftImg{
-    width: 23%;
+    width: 15%;
     position: absolute;
     top: 10%;
     left: 2%;
@@ -525,7 +526,7 @@ footer{
     height: auto;
 }
 .topicImg .rightImg{
-    width: 23%;
+    width: 15%;
     position: absolute;
     top: 10%;
     right: 2%;
@@ -536,7 +537,7 @@ footer{
 }
 .topicContent{
     width: 100%;
-    height: 280px;
+    height: 194px;
     background-color: black;
     position: absolute;
     bottom: 12vh;
@@ -553,7 +554,7 @@ footer{
     text-align: center;
 }
 .topicBody{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -561,7 +562,7 @@ footer{
 }
 .activityTopic{
     top: 0%;
-    left: 0%;
+    left: 1.5%;
 }
 .waitTopic{
     top: 0%;
@@ -572,7 +573,7 @@ footer{
     left: -100%;
 }
 .question_title{
-    width: 90%;
+    width: 60%;
     margin: 0 auto;
 }
 .question_title img{
@@ -589,7 +590,7 @@ footer{
 .game_bg{
     background-image: url(../img/game_bg.png);
     background-repeat: repeat-x;
-    background-size: 120%;
+    background-size: 50%;
     background-position-y: 1%;
 }
 .game_outbg{
@@ -611,11 +612,12 @@ footer{
     bottom: 10vh;
     background-image: url(../img/game_bg.png);
     background-repeat: repeat-x;
-    background-size: 120%;
+    background-size: 55%;
     background-position-y: -8%;
+    /* z-index: -1; */
 }
 .jumbotron{
-    width: 40%;
+    width: 20%;
     margin: 0 auto;
     margin-top: 30px;
 }
@@ -624,7 +626,7 @@ footer{
     height: auto;
 }
 .checkTitle{
-    width: 40%;
+    width: 25%;
     margin: 0 auto;
     margin-top: 20vh;
 }
@@ -633,9 +635,10 @@ footer{
     height: auto;
 }
 .checkButton{
-    width: 70%;
+    width: 40%;
     margin: 0 auto;
     margin-top: 50px;
+    cursor: pointer;
 }
 .checkButton img{
     width: 100%;
@@ -644,14 +647,14 @@ footer{
 .resultContent{
     width: 100%;
     height: auto;
-    padding: 10px 0;
+    padding: 50px 0 12vh 0;
     background-color: black;
-    position: absolute;
-    bottom: 11vh;
-    left: 0;
+    position: relative;
+    /* bottom: 11vh;
+    left: 0; */
 }
 .resultContent .myBtn{
-    width: 70%;
+    width: 30%;
     margin: 0 auto;
     margin-bottom: 15px;
     display: block;
@@ -843,7 +846,6 @@ footer{
         max-width: 500px;
         min-height: 100vh;
         /* padding: 0 10px; */
-        background-color: #d1d1d1;
         margin: 0 auto;
         overflow: hidden;
         position: relative;
@@ -970,7 +972,7 @@ footer{
     .resultContent{
         width: 100%;
         height: auto;
-        padding-top: 30px;
+        padding: 30px 0 0 0;
         background-color: black;
         position: absolute;
         bottom: 11vh;

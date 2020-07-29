@@ -496,10 +496,9 @@
 
       $('.ge_card05').removeClass('activeGender').addClass('agoGender');
       setTimeout(function(){
-        $('.topic').fadeOut(500);
-        setTimeout(function(){
+        $('.topic').fadeOut(500,function(){
           $('.check-block').fadeIn(500);
-        },500)
+        });
       },500)
     }
   }
@@ -519,15 +518,13 @@
   })
   
   $('.get-result').on('click', function(){
-    $('.check-block').fadeOut(500);
-    setTimeout(function(){
+    $('.check-block').fadeOut(500, function(){
       $('.loading-block').fadeIn(300);
-    },500)
+    });
     setTimeout(function(){
-      $('.loading-block').fadeOut(500);
-      setTimeout(function(){
+      $('.loading-block').fadeOut(500, function(){
         $('.result-block').fadeIn(500);
-      },500)
+      });
     },2500)
   });
 </script>
