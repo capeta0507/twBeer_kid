@@ -536,7 +536,7 @@ footer{
 }
 .topicContent{
     width: 100%;
-    height: 250px;
+    height: 280px;
     background-color: black;
     position: absolute;
     bottom: 12vh;
@@ -655,6 +655,7 @@ footer{
     margin: 0 auto;
     margin-bottom: 15px;
     display: block;
+    cursor: pointer;
 }
 .resultContent .myBtn img{
     width: 100%;
