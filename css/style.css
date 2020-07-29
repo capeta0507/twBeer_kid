@@ -680,13 +680,25 @@ footer{
     width: 100%;
     height: auto;
 }
+.mbBlock{
+    display: none;
+}
+.mbnone{
+    display: block;
+}
+.bgDownmbBlock{
+    display: none;
+}
+.bgDownmbnone{
+    display: block;
+}
 @media screen and (max-width: 1366px) and (max-height: 650px){
     .game_bgDown{
         display: block;
         bottom: -23vh;
     }
     .mainContainer{
-        margin-bottom: 10vh;
+        margin-bottom: 0;
     }
 }
 @media screen and (max-width: 1280px){
@@ -695,10 +707,22 @@ footer{
         bottom: -5vh;
     }
     .mainContainer{
-        margin-bottom: 10vh;
+        margin-bottom: 0;
     }
 }
 @media screen and (max-width: 992px){
+    .mbBlock{
+        display: block;
+    }
+    .mbnone{
+        display: none;
+    }
+    .bgDownmbBlock{
+        display: block;
+    }
+    .bgDownmbnone{
+        display: none;
+    }
     .navfive{
         width:35%;
     }
@@ -899,6 +923,7 @@ footer{
     .genderCard{
         width: 90%;
         margin-top: 18vh;
+        margin-bottom: 10vh;
     }
     .genderSelect{
         width: 80%;
@@ -1046,6 +1071,7 @@ footer{
         background-position-y: 2%;
     }
     .game_bgDown{
+        position: relative;
         height: 80px;
         background-size: 100%;
     }

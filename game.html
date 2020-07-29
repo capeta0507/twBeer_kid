@@ -87,7 +87,7 @@
           <img src="img/gender/home_logo.png" alt="">
         </div>
       </div>
-      <!-- <div class="game_bgDown"></div> -->
+      <div class="game_bgDown bgDownmbBlock"></div>
       <!-- 男 -->
       <div id="maleQuest" class="topic">
         <div class="topicImg">
@@ -419,7 +419,7 @@
         </div>
       </div>
     </div>
-    <div class="game_bgDown"></div>
+    <div class="game_bgDown bgDownmbnone"></div>
     <footer></footer>
   </div>
 </body>
@@ -427,6 +427,8 @@
 <script>
   var getGender = '';
   var getQuest = '';
+  var getWidth = $(window).width();
+  // console.log('getWidth', getWidth);
 
   // 選擇男女
   function nextQuest(x){
@@ -518,7 +520,11 @@
       $('.ge_card01').removeClass('waitGender').addClass('activeGender');
       $('.qa_card01').removeClass('waitTopic').addClass('activityTopic');
       $('#myGender').fadeIn(500);
-      $('.game_bgDown').fadeIn(500);
+      if(getWidth < 992){
+        $('.bgDownmbBlock').fadeIn(500);
+      } else {
+        $('.bgDownmbnone').fadeIn(500);
+      }
     },500)
   })
   
