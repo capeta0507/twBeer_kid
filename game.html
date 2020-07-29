@@ -64,7 +64,7 @@
         </a></li>
       </ul>
     </div>
-    <div class="mainContainer game_bg">
+    <div class="mainContainer">
       <div id="myGender" class="genderCard">
         <div class="genderBody">
           <div class="genderSelect">
@@ -87,7 +87,7 @@
           <img src="img/gender/home_logo.png" alt="">
         </div>
       </div>
-      <div class="game_bgDown"></div>
+      <!-- <div class="game_bgDown"></div> -->
       <!-- 男 -->
       <div id="maleQuest" class="topic">
         <div class="topicImg">
@@ -401,6 +401,7 @@
         <div class="checkButton">
           <div class="myBtn get-result"><img src="img/makeResult.png" alt=""></div>
         </div>
+        <div class="ageBar"></div>
       </div>
       <div class="loading-block">
         <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> 
@@ -417,7 +418,8 @@
           <div class="myBtn restart"><img src="img/restart.png" alt=""></div>
         </div>
       </div>
-  </div>
+    </div>
+    <div class="game_bgDown"></div>
     <footer></footer>
   </div>
 </body>
@@ -440,6 +442,7 @@
         $('#famaleQuest').fadeIn(500);
       },1000)
     }
+    $('.game_bgDown').fadeOut(500);
   }
   // 下一題
   function changeQuest(y,z){
@@ -496,9 +499,10 @@
 
       $('.ge_card05').removeClass('activeGender').addClass('agoGender');
       setTimeout(function(){
-        $('.topic').fadeOut(500,function(){
+        $('.topic').fadeOut(500);
+        setTimeout(function(){
           $('.check-block').fadeIn(500);
-        });
+        },500)
       },500)
     }
   }
@@ -514,6 +518,7 @@
       $('.ge_card01').removeClass('waitGender').addClass('activeGender');
       $('.qa_card01').removeClass('waitTopic').addClass('activityTopic');
       $('#myGender').fadeIn(500);
+      $('.game_bgDown').fadeIn(500);
     },500)
   })
   
