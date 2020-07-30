@@ -444,6 +444,16 @@ body{
     left: 23%;
     cursor: pointer;
 }
+.getdown{
+    width: 80px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: none;
+}
+.getdown img{
+    width: 100%;
+    height: auto;
+}
 /* waiting */
 .waitingLogo{
     width: 50%;
@@ -1075,9 +1085,12 @@ footer{
         width: 70%;
         margin: 0 auto;
     }
+    .getdown{
+        display: block;
+    }
     .loadWait{
         width: 100%;
-        position: absolute;
+        position: fixed;
         bottom: 11vh;
         left: 0;
     }
@@ -1091,7 +1104,7 @@ footer{
         width: 100%;
         height: 170px;
         margin-top: -15px;
-        line-height: 290px;
+        line-height: 250px;
     }
     .mtHome {
         margin-top: -30px;
