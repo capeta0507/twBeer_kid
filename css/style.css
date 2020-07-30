@@ -293,6 +293,153 @@ body{
     padding-top: 70px;
     padding-bottom: 15vh;
 }
+/* index */
+.indexBg{
+    width: 100%;
+    height: 260px;
+    background-image: url(../img/bgidx.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: top;
+    margin-top: -60px;
+    line-height: 350px;
+}
+.homeContent{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* margin-top: 70px; */
+}
+.pd01{
+    padding-top: 90px;
+}
+.homeCard {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.homeBody{
+    width: 48%;
+    display: block;
+    /* background-color: #C9CACA; */
+    padding-top: 10px;
+}
+.homeSelect{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.homeSelect img{
+    width: 100%;
+    height: auto;
+}
+.homeRight{
+    width: 48%;
+}
+.homeRight img{
+    width: 90%;
+}
+.mtHome{
+    margin-top: -40px;
+}
+.gameLink{
+    width: 320px;
+    margin: 0 auto;
+    vertical-align:middle;
+}
+.gameLink a img{
+    width: 100%;
+}
+.homeText{
+    width: 100%;
+    border-top: 4px solid black;
+    margin: 30px 0 50px 0;
+    padding: 15px 0;
+    border-bottom: 4px solid black;
+}
+.dialect{
+    width: 40%;
+    margin: 0 auto;
+}
+.dialect img{
+    width: 100%;
+}
+.dialectContent{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+.dialectItem{
+    width: 31%;
+    margin: 10px 10px;
+    position: relative;
+}
+.dialectItem img{
+    width: 100%;
+}
+.dialectItem .voice{
+    width: 12.5%;
+    position: absolute;
+    bottom: 5px;
+    left: 23%;
+    cursor: pointer;
+}
+.mt02{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.mtb01{
+    margin-bottom: 20vh;
+}
+/* slick */
+.slick-prev, .slick-next {
+	top: 50% !important;
+	width: 10% !important;
+	height: auto !important;
+}
+.slick-next:before {
+	content: '' !important;
+}
+.slick-prev:before {
+	content: '' !important;
+}
+.slick-next {
+	right: 12px !important;
+	z-index: 5;
+}
+.slick-prev {
+	left: 12px !important;
+	z-index: 5;
+}
+.leftBtn{
+	width: 100%;
+}
+.slickContent{
+    display: none;
+}
+.single-item-mb{
+    width: 100%;
+}
+.box{
+    width: 100%;
+    text-align: center;
+    /* padding: 0 14px;
+    margin: 0 20px; */
+    position: relative;
+}
+.box > img{
+    width: 100%;
+    cursor: pointer;
+}
+.box .voice{
+    width: 12.5%;
+    position: absolute;
+    bottom: 0px;
+    left: 23%;
+    cursor: pointer;
+}
 /* waiting */
 .waitingLogo{
     width: 50%;
@@ -311,6 +458,30 @@ body{
 .waitingText img{
     width: 100%;
     height: auto;
+}
+.loadWait{
+    width: 100%;
+    position: absolute;
+    bottom: 11vh;
+}
+.loadWait > img{
+    width: 100%;
+    height: auto;
+}
+.readyText{
+    width: 30%;
+    margin: 0 auto;
+}
+.readyText > img{
+    width: 100%;
+    height: auto;
+}
+.mbLoadContain{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 10vh;
 }
 /* age */
 .ageLogo{
@@ -820,6 +991,13 @@ footer{
         padding-top: 90px;
         padding-bottom: 15vh;
     }
+    .mbLoadContain{
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding-top: 5vh;
+        padding-bottom: 15vh;
+    }
     .mbAgeContain{
         width: 100%;
         max-width: 500px;
@@ -846,6 +1024,52 @@ footer{
         margin: 0 auto;
         margin-top: 50px;
         cursor: pointer;
+    }
+    /* index */
+    .readyText {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .homeContent{
+        max-width: 500px;
+    }
+    .homeCard {
+        width: 80%;
+    }
+    .indexBg {
+        width: 100%;
+        height: 170px;
+        margin-top: -15px;
+        line-height: 290px;
+    }
+    .mtHome {
+        margin-top: -30px;
+    }
+    .gameLink {
+        width: 230px;
+    }
+    .homeText {
+        margin: 30px 0 30px 0;
+    }
+    .dialect {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .dialectContent{
+        display: none;
+    }
+    .slickContent{
+        display: block;
+    }
+    .single-item-mb{
+        width: 100%;
+        display: block;
+    }
+    .slick_mt1{
+        margin: 0 0 70px 0;
+    }
+    .slick_mt2{
+        margin: 70px 0;
     }
     /* waiting */
     .waitingLogo{
@@ -902,7 +1126,7 @@ footer{
         text-align: center;
     }
     .loadText p{
-        margin-top: 50px;
+        margin-top: 40px;
         margin-bottom: 10px;
     }
     .loadText div{
