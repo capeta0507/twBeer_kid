@@ -542,8 +542,8 @@ body{
     position: relative;
     bottom: 0;
     left: 0;
-    height: 500px;
-    background: url(../img/age/ageImg.png) no-repeat;
+    height: 250px;
+    background: url(../img/age/age_pc.png) no-repeat;
     background-position-x: -20%;
     background-position-y: 0%;
     background-size: 100%;
