@@ -929,6 +929,11 @@ footer{
         margin-bottom: 0;
     }
 }
+@media screen and (max-width: 1200px){
+    .container{
+        width: 100%;
+    }
+}
 @media screen and (max-width: 992px){
     .mbBlock{
         display: block;
@@ -938,7 +943,7 @@ footer{
     }
     .container{
         width: 100%;
-        max-width: 500px;
+        max-width: 600px;
         margin: 0 auto;
         position: relative;
         padding: 5px 0;
