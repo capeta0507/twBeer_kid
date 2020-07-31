@@ -1143,7 +1143,7 @@ footer{
     .loadWait{
         width: 100%;
         position: fixed;
-        bottom: 11vh;
+        bottom: 12vh;
         left: 0;
     }
     .homeContent{
