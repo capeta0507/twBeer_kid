@@ -278,6 +278,9 @@ body{
     min-height: 100vh;
     background-color: #C9CACA;
 }
+.ageWhite{
+    background-color: #fff !important;
+}
 .mbContain{
     width: 100%;
     max-width: 700px;
@@ -498,6 +501,15 @@ body{
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 10vh;
+}
+.loadingLogo{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.loadingLogo img{
+    width: 100%;
+    height: auto;
 }
 /* age */
 .ageLogo{
@@ -977,6 +989,11 @@ footer{
         margin: 0 auto;
         margin-top: 0px;
     }
+    .loadingLogo{
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 0;
+    }
     .mbLoadContain{
         padding-top: 15px;
     }
@@ -1276,20 +1293,25 @@ footer{
         margin: 0 auto;
         margin-top: 35px; 
     }
-    /* age */
-    .ageLogo{
+    .loadingLogo{
         width: 40%;
         margin: 0 auto;
         margin-top: 30px;
     }
-    .ageBorder{
-        width: 80%;
+    /* age */
+    .ageLogo{
+        width: 30%;
         margin: 0 auto;
-        margin-top: 40px;
+        margin-top: 30px;
+    }
+    .ageBorder{
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 10px;
         border: 1px solid #000;
     }
     .ageText{
-        width: 70%;
+        width: 60%;
         margin: 0px auto;
         margin-top: 30px;
         margin-bottom: 20px;
