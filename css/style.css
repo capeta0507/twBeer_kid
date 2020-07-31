@@ -476,7 +476,8 @@ body{
 .loadWait{
     width: 100%;
     margin: 0 auto;
-    position: relative;
+    position: fixed;
+    bottom: 12vh;
 }
 .loadWait > img{
     width: 100%;
@@ -899,6 +900,18 @@ footer{
     }
     .game_bgDown{
         bottom: -23vh;
+    }
+    .ageLogo {
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 0px;
+    }
+    .mbLoadContain{
+        padding-top: 15px;
+    }
+    .loadText p {
+        margin-top: 40px;
+        margin-bottom: 10px;
     }
     .topic {
         width: 100%;
