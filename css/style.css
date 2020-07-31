@@ -1299,7 +1299,7 @@ footer{
         position: absolute;
         bottom: 12vh;
         left: 0;
-        height: 163px;
+        height: 330px;
         background: url(../img/age/ageImg.png) no-repeat;
         background-position-x: -20%;
         background-position-y: 10%;
@@ -1528,5 +1528,9 @@ footer{
     }
     .resultContent .myBtn{
         width: 70%;
+    }
+    .ageBar{
+        width: 100%;
+        height: 163px;
     }
 }
