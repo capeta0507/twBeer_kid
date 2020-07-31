@@ -773,6 +773,15 @@ footer{
     width: 100%;
     height: auto;
 }
+.question_title2{
+    width: 50%;
+    margin: 0 auto;
+}
+.question_title2 img{
+    width: 100%;
+    height: auto;
+}
+
 /* 結果 */
 .check-block, .result-block, .loading-block{
     width: 100%;
@@ -783,19 +792,19 @@ footer{
 .game_bg{
     background-image: url(../img/game_bg.png);
     background-repeat: repeat-x;
-    background-size: 50%;
+    background-size: 110%;
     background-position-y: 1%;
 }
 .game_outbg{
     background-image: url(../img/game_bg.png);
     background-repeat: repeat-x;
-    background-size: 45%;
+    background-size: 110%;
     background-position-y: -5%;
 }
 .wait_bg{
     background-image: url(../img/game_bg.png);
     background-repeat: repeat-x;
-    background-size: 50%;
+    background-size: 110%;
     background-position-y: -10%;
 }
 .game_bgDown{
@@ -805,7 +814,7 @@ footer{
     bottom: 10vh;
     background-image: url(../img/game_bg.png);
     background-repeat: repeat-x;
-    background-size: 45%;
+    background-size: 110%;
     background-position-y: -8%;
     /* z-index: -1; */
 }
@@ -912,12 +921,17 @@ footer{
         height: 250px;
     }
     .wait_bg{
-        background-size: 60%;
-        background-position-y: -8%;
+        background-size: 140%;
+        background-position-y: -12%;
+    }
+    .game_outbg{
+        background-position-y: -2%;
     }
 }
 @media screen and (max-width: 1680px){
-    mbContain
+    .mbContain{
+        padding-top: 140px;
+    }
     .topic{
         width: 100%;
         max-width: 1200px;
@@ -926,14 +940,29 @@ footer{
     .ageBar{
         bottom: 10vh;
     }
+    .game_outbg{
+        background-position-y: -2%;
+    }
 }
 @media screen and (max-width: 1440px){
+    .topic {
+        width: 100%;
+        max-width: 1100px;
+        padding-top: 70px;
+    }
+    .mbContain{
+        padding-top: 100px;
+    }
     .ageBar {
         position: absolute;
         bottom: 3%;
     }
     .genderCard{
         width: 26%;
+    }
+    .topicContent {
+        width: 100%;
+        height: 170px;
     }
 }
 @media screen and (max-width: 1366px) and (max-height: 650px){
@@ -1164,7 +1193,7 @@ footer{
     .wait_bg{
         background-image: url(../img/game_bg.png);
         background-repeat: repeat-x;
-        background-size: 120%;
+        background-size: 300%;
         background-position-y: -8%;
     }
     .question_title {
@@ -1302,7 +1331,7 @@ footer{
 
     .mainContainer{
         width: 100%;
-        max-width: 500px;
+        max-width: 1000px;
         min-height: 100vh;
         /* padding: 0 10px; */
         margin: 0 auto;
@@ -1320,7 +1349,7 @@ footer{
         cursor: pointer;
     }
     .iptImg{
-        width: 48%;
+        width: 30%;
         height: auto;
         margin: 5px 0;
         cursor: pointer;
@@ -1425,12 +1454,12 @@ footer{
     .game_outbg{
         background-image: url(../img/game_bg.png);
         background-repeat: repeat-x;
-        background-size: 100%;
+        background-size: 300%;
         background-position-y: -3%;
     }
     .game_bgDown{
-        height: 200px;
-        background-size: 120%;
+        height: 150px;
+        background-size: 240%;
     }
     .jumbotron{
         width: 40%;
@@ -1452,7 +1481,7 @@ footer{
         display: block;
     }
     .resultContent .myBtn{
-        width: 70%;
+        width: 50%;
         margin: 0 auto;
         margin-bottom: 15px;
         display: block;
@@ -1466,12 +1495,38 @@ footer{
     }
 }
 @media screen and (max-width: 500px){
+    .topicContent{
+        width: 100%;
+        height: 250px;
+        background-color: black;
+        position: absolute;
+        bottom: 12vh;
+        left: 0;
+    }    
+    .mainContainer{
+        width: 100%;
+        max-width: 500px;
+        min-height: 100vh;
+        /* padding: 0 10px; */
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+    .iptImg{
+        width: 48%;
+        height: auto;
+        margin: 5px 0;
+        cursor: pointer;
+    }
     .game_outbg{
         background-position-y: 2%;
     }
     .game_bgDown{
         position: relative;
         height: 80px;
-        background-size: 100%;
+        background-size: 230%;
+    }
+    .resultContent .myBtn{
+        width: 70%;
     }
 }
