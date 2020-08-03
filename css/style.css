@@ -495,7 +495,7 @@ body{
 .slick-prev, .slick-next {
 	top: 52% !important;
 	width: 5% !important;
-	height: auto !important;
+    height: auto !important;
 }
 .slick-next:before {
 	content: '' !important;
@@ -510,6 +510,15 @@ body{
 .slick-prev {
 	left: 35px !important;
 	z-index: 5;
+}
+.slick-next img, .slick-prev img{
+    transition: all .7s;
+}
+.slick-next img:hover {
+    transform: scale3d(2.1, 2.1, 1);
+}
+.slick-prev img:hover {
+    transform: scale3d(2.1, 2.1, 1);
 }
 .leftBtn{
 	width: 100%;

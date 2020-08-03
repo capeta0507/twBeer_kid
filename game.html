@@ -434,7 +434,7 @@
         </div>
         <div class="resultContent">
           <div class="resultDiv">
-            <div class="myBtn share-result"><img src="img/fb_share.png" alt=""></div>
+            <div class="myBtn share-result" onclick="fb_share()"><img src="img/fb_share.png" alt=""></div>
             <div class="myBtn restart"><img src="img/restart.png" alt=""></div>
           </div>
         </div>
@@ -447,7 +447,7 @@
 </body>
 <script src="js/index.js"></script>
 <script src="js/game_hover.js"></script>
-<!-- <script src="js/share.js"></script> -->
+<script src="js/share.js"></script>
 <script>
   var getGender = '';
   var getQuest = '';
@@ -586,16 +586,16 @@
   $('.get-result').on('click', function(){
     $('.check-block').fadeOut(500, function(){
       $('.loading-block').fadeIn(300);
-      // FB.getLoginStatus(function (response) {
-      //   checkFbLoginStatus(response);
-      // });
-    });
-    setTimeout(function(){
-      $('.loading-block').fadeOut(500, function(){
-        $('.result-block').fadeIn(500);
+      FB.getLoginStatus(function (response) {
+        checkFbLoginStatus(response);
       });
-      $('footer').addClass('footer_w');
-    },2500)
+    });
+    // setTimeout(function(){
+    //   $('.loading-block').fadeOut(500, function(){
+    //     $('.result-block').fadeIn(500);
+    //   });
+    //   $('footer').addClass('footer_w');
+    // },2500)
   });
 </script>
 </html>
