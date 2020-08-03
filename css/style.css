@@ -680,6 +680,9 @@ body{
     background-position-y: 0%;
     background-size: 100%;
 }
+.linkNo{
+    cursor: pointer;
+}
 .falseLoad{
     position: fixed;
     top: 0;
@@ -1001,7 +1004,7 @@ footer{
     width: 15%;
     margin: 0 auto;
     margin-top: 150px;
-    margin-bottom: 0;
+    margin-bottom: 50px;
     cursor: pointer;
 }
 .checkButton img{

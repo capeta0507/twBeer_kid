@@ -25,10 +25,10 @@
         <img src="img/age/age_text.png" alt="">
       </div>
       <div class="ageLink">
-        <a href="index.html">
+        <a class="linkYes" href="index.html">
           <img src="img/age/yes.png" alt="">
         </a>
-        <a onclick="alert('Sorry~本活動參加者須年滿18歲唷！')">
+        <a class="linkNo" onclick="alert('Sorry~本活動參加者須年滿18歲唷！')">
           <img src="img/age/no.png" alt="">
         </a>
       </div>
@@ -38,4 +38,16 @@
   </div>
 </body>
 <script src="js/index.js"></script>
+<script>
+  $('.linkYes').hover(function(){
+    $('.linkYes img').attr("src", "img/age/yes_hover.png");
+  },function(){
+      $('.linkYes img').attr("src", "img/age/yes.png")
+  });
+  $('.linkNo').hover(function(){
+    $('.linkNo img').attr("src", "img/age/no_hover.png");
+  },function(){
+      $('.linkNo img').attr("src", "img/age/no.png")
+  });
+</script>
 </html>
