@@ -96,15 +96,20 @@
             <img class="mbCan" src="img/can_animation.gif" alt="">
           </div>
           <div class="gameLink mbnoneFlex">
-            <img src="img/l_arrow.gif" alt="">
+            <img class="mt03" src="img/l_arrow.gif" alt="">
             <a href="game.html">
               <img src="img/intor.jpg" alt="">
             </a>
-            <img src="img/r_arrow.gif" alt="">
+            <img class="mt03" src="img/r_arrow.gif" alt="">
           </div>
         </div>
         <div class="homeRight">
           <div class="homeTxt">
+            <!-- <img src="img/home_text01.png" alt="">
+            <img src="img/home_text02.png" alt="">
+            <img src="img/home_text03.png" alt="">
+            <img src="img/home_text04.png" alt="">
+            <img src="img/home_text05.png" alt=""> -->
             <img src="img/home_text.png" alt="">
           </div>
           <div class="homeLogo">
@@ -113,7 +118,14 @@
         </div>
       </div>
     </div>
-    <div class="indexBg">
+    <div class="indexBg"></div>
+    <div class="mbIdx_btn">
+      <a href="game.html">
+        <img src="img/mbGame.png" alt="">
+      </a>
+      <a href="#myDialect">
+        <img src="img/mbDialoect.png" alt="">
+      </a>
     </div>
     <div class="homeText">
       <div id="myDialect"></div>
@@ -198,7 +210,7 @@
     </div>
     <footer></footer>
   </div>
-  <div id="falseLoad" class="mainContent falseLoad" style="display: none;">
+  <div id="falseLoad" class="mainContent falseLoad">
     <div class="mbLoadContain">
       <div class="loadingLogo">
         <img src="img/age/logom.png" alt="">
@@ -226,7 +238,8 @@
 <script>
   var myVoice = document.getElementById('myVoice');
   setTimeout(function(){
-    $('#falseLoad').fadeOut(500)
+    $('#falseLoad').fadeOut(500);
+    cans();
   },2500);
   function voice(x){
     if(x == 1){
@@ -290,26 +303,28 @@
   });
 
   // 罐子
-  setTimeout(function(){
-    $('.can01').css({"opacity":"1", "top":"0px"});
-  },200)
-  setTimeout(function(){
-    $('.can02').css({"opacity":"1", "top":"0px"});
-  },300)
-  setTimeout(function(){
-    $('.can03').css({"opacity":"1", "top":"0px"});
-  },600)
-  setTimeout(function(){
-    $('.can04').css({"opacity":"1", "top":"0px"});
-  },800)
-  setTimeout(function(){
-    $('.can05').css({"opacity":"1", "top":"0px"});
-  },1000)
-  setTimeout(function(){
-    $('.can06').css({"opacity":"1", "top":"0px"});
-  },1200)
-  setTimeout(function(){
-    $('.can07').css({"opacity":"1", "top":"0px"});
-  },1400)
+  function cans(){
+    setTimeout(function(){
+      $('.can01').css({"opacity":"1", "top":"0px"});
+    },500);
+    setTimeout(function(){
+      $('.can02').css({"opacity":"1", "top":"0px"});
+    },600);
+    setTimeout(function(){
+      $('.can03').css({"opacity":"1", "top":"0px"});
+    },700);
+    setTimeout(function(){
+      $('.can04').css({"opacity":"1", "top":"0px"});
+    },800);
+    setTimeout(function(){
+      $('.can05').css({"opacity":"1", "top":"0px"});
+    },900);
+    setTimeout(function(){
+      $('.can06').css({"opacity":"1", "top":"0px"});
+    },1000);
+    setTimeout(function(){
+      $('.can07').css({"opacity":"1", "top":"0px"});
+    },1100);
+  }
 </script>
 </html>

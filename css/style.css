@@ -338,6 +338,11 @@ body{
 .homeSelect .mbCan{
     width: 100%;
 }
+.canBlock{
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
 .smokeImg{
     width: 35%;
     float: right;
@@ -417,14 +422,18 @@ body{
     width: 37%;
     position: relative;
 }
-.homeRight .homeTxt img, .homeRight .homeLogo img{
+.homeRight .homeTxt img{
+    width: 100%;
+    position: absolute;
+}
+.homeRight .homeLogo img{
     width: 100%;
 }
 .mtHome{
     margin-top: -40px;
 }
 .gameLink{
-    width: 320px;
+    width: 340px;
     /* margin: 0 auto; */
     position: absolute;
     display: flex;
@@ -475,6 +484,9 @@ body{
 }
 .mtb01{
     margin-bottom: 20vh;
+}
+.mt03{
+    margin: 0 5px;
 }
 /* slick */
 .slick-prev, .slick-next {
@@ -709,29 +721,52 @@ footer{
 	transition: transform .3s ease-out;
 	transition: transform .3s ease-out, -webkit-transform .3s ease-out;
 }
+.footer_w{
+    background-color: #fff;
+	background-image: url(../img/footer_1920_b.png);
+	background-size: 100% 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 @media only screen and (max-width: 1919px){
 	footer {
 		background-image: url(../img/footer_1680.png);
 		background-size: 98% 80%;
-	}
+    }
+    .footer_w{
+        background-image: url(../img/footer_1680_b.png);
+		background-size: 98% 80%;
+    }
 }
 @media only screen and (max-width: 1200px){
 	footer {
 		background-image: url(../img/footer_1140.png);
 		background-size: 98% 80%;
-	}
+    }
+    .footer_w{
+        background-image: url(../img/footer_1140_b.png);
+		background-size: 98% 80%;
+    }
 }
 @media only screen and (max-width: 991px){
 	footer {
 		background-image: url(../img/footer_m.png);
 		background-size: 98% 100%;
-	}
+    }
+    .footer_w{
+        background-image: url(../img/footer_m_b.png);
+		background-size: 98% 100%;
+    }
 }
 @media only screen and (max-width: 768px){
 	footer {
 		background-image: url(../img/footer_m.png);
 		background-size: 100% 110%;
-	}
+    }
+    .footer_w{
+        background-image: url(../img/footer_m_b.png) !important;
+		background-size: 100% 110%;
+    }
 }
 /* game */
 
@@ -951,19 +986,19 @@ footer{
     height: auto;
 }
 .checkTitle{
-    width: 20%;
+    width: 10%;
     margin: 0 auto;
-    margin-top: 10vh;
+    margin-top: 9vh;
 }
 .checkTitle img{
     width: 100%;
     height: auto;
 }
 .checkButton{
-    width: 20%;
+    width: 15%;
     margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 120px;
+    margin-top: 150px;
+    margin-bottom: 0;
     cursor: pointer;
 }
 .checkButton img{
@@ -1024,6 +1059,9 @@ footer{
 }
 .bgDownmbnone{
     display: block;
+}
+.mbIdx_btn{
+    display: none;
 }
 @media screen and (max-width: 1920px){
     .mbContain{
@@ -1136,12 +1174,6 @@ footer{
         margin-top: 18vh;
         margin-bottom: 15vh;
         justify-content: space-between;
-    }
-    .checkTitle {
-        width: 20%;
-    }
-    .checkButton {
-        width: 20%;
     }
     .waitGender{
         top: 10%;
@@ -1346,14 +1378,14 @@ footer{
         width: 90%;
     }
     .checkTitle{
-        width: 40%;
+        width: 30%;
         margin: 0 auto;
-        margin-top: 12vh;
+        margin-top: 9vh;
     }
     .checkButton{
-        width: 65%;
+        width: 45%;
         margin: 0 auto;
-        margin-top: 50px;
+        margin-top: 100px;
         cursor: pointer;
     }
     /* index */
@@ -1417,6 +1449,19 @@ footer{
     }
     .slick-prev, .slick-next {
         top: 52% !important;
+    }
+    .mbIdx_btn{
+        width: 55%;
+        margin: 0 auto;
+        display: block;
+        margin-top: 10px;
+    }
+    .mbIdx_btn a{
+        width: 100%;
+        margin-top: 0;
+    }
+    .mbIdx_btn a img{
+        width: 100%;
     }
     /* waiting */
     .waitingLogo{
@@ -1725,6 +1770,9 @@ footer{
     }
 }
 @media screen and (max-width: 500px){
+    .canBlock {
+        width: 80%;
+    }
     .topicContent{
         width: 100%;
         height: 250px;

@@ -404,8 +404,18 @@
       </div>
       <div class="check-block">
         <div class="checkTitle">
-          <img src="img/age/logom.png" alt="">
+          <img src="img/gender/femaleImg.png" alt="">
         </div>
+        <div class="canBlock">
+          <img src="img/can_1.png" alt="" class="canImg can01 ">
+          <img src="img/can_2.png" alt="" class="canImg can02 ">
+          <img src="img/can_3.png" alt="" class="canImg can03 ">
+          <img src="img/can_4.png" alt="" class="canImg can04 ">
+          <img src="img/can_5.png" alt="" class="canImg can05 ">
+          <img src="img/can_6.png" alt="" class="canImg can06 ">
+          <img src="img/can_7.png" alt="" class="canImg can07 ">
+        </div>
+
         <div class="checkButton">
           <div class="myBtn get-result"><img src="img/makeResult.png" alt=""></div>
         </div>
@@ -455,6 +465,7 @@
       },1000)
     }
     $('.game_bgDown').fadeOut(500);
+    $('footer').addClass('footer_w');
   }
   // 下一題
   function changeQuest(y,z){
@@ -514,8 +525,31 @@
         $('.topic').fadeOut(500);
         setTimeout(function(){
           $('.check-block').fadeIn(500);
+          // 罐子
+          setTimeout(function(){
+            $('.can01').css({"opacity":"1", "top":"0px"});
+          },200)
+          setTimeout(function(){
+            $('.can02').css({"opacity":"1", "top":"0px"});
+          },300)
+          setTimeout(function(){
+            $('.can03').css({"opacity":"1", "top":"0px"});
+          },400)
+          setTimeout(function(){
+            $('.can04').css({"opacity":"1", "top":"0px"});
+          },500)
+          setTimeout(function(){
+            $('.can05').css({"opacity":"1", "top":"0px"});
+          },600)
+          setTimeout(function(){
+            $('.can06').css({"opacity":"1", "top":"0px"});
+          },700)
+          setTimeout(function(){
+            $('.can07').css({"opacity":"1", "top":"0px"});
+          },800);
         },500)
       },500)
+      $('footer').removeClass('footer_w');
     }
   }
   // 重新開始
@@ -530,12 +564,14 @@
       $('.ge_card01').removeClass('waitGender').addClass('activeGender');
       $('.qa_card01').removeClass('waitTopic').addClass('activityTopic');
       $('#myGender').fadeIn(500);
+      $('footer').removeClass('footer_w');
       if(getWidth < 992){
         $('.bgDownmbBlock').fadeIn(500);
       } else {
         $('.bgDownmbnone').fadeIn(500);
       }
     },500)
+    $('.canImg').removeAttr('style');
   })
   
   $('.get-result').on('click', function(){
@@ -546,6 +582,7 @@
       $('.loading-block').fadeOut(500, function(){
         $('.result-block').fadeIn(500);
       });
+      $('footer').addClass('footer_w');
     },2500)
   });
 </script>
