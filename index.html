@@ -105,12 +105,12 @@
         </div>
         <div class="homeRight">
           <div class="homeTxt">
-            <!-- <img src="img/home_text01.png" alt="">
-            <img src="img/home_text02.png" alt="">
-            <img src="img/home_text03.png" alt="">
-            <img src="img/home_text04.png" alt="">
-            <img src="img/home_text05.png" alt=""> -->
-            <img src="img/home_text.png" alt="">
+            <img class="home_text01" src="img/home_text01.png" alt="">
+            <img class="home_text02" src="img/home_text02.png" alt="">
+            <img class="home_text03" src="img/home_text03.png" alt="">
+            <img class="home_text04" src="img/home_text04.png" alt="">
+            <img class="home_text05" src="img/home_text05.png" alt="">
+            <!-- <img src="img/home_text.png" alt=""> -->
           </div>
           <div class="homeLogo">
             <img src="img/homelogo.png" alt="">
@@ -240,6 +240,7 @@
   setTimeout(function(){
     $('#falseLoad').fadeOut(500);
     cans();
+    texts();
   },2500);
   function voice(x){
     if(x == 1){
@@ -326,5 +327,23 @@
       $('.can07').css({"opacity":"1", "top":"0px"});
     },1100);
   }
+  // 文字
+  function texts(){
+  setTimeout(function(){
+    $('.home_text01').css({"opacity":"1", "top":"0px"});
+  },500);
+  setTimeout(function(){
+    $('.home_text02').css({"opacity":"1", "top":"0px"});
+  },600);
+  setTimeout(function(){
+    $('.home_text03').css({"opacity":"1", "top":"0px"});
+  },700);
+  setTimeout(function(){
+    $('.home_text04').css({"opacity":"1", "top":"0px"});
+  },800);
+  setTimeout(function(){
+    $('.home_text05').css({"opacity":"1", "top":"0px"});
+  },900);
+}
 </script>
 </html>
