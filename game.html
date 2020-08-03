@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>台灣啤酒 – 經典台灣囡仔</title>
+  <meta property="fb:app_id" content="594956418126262" />
   <meta name="description" content="快來測測你是哪一款經典台灣囡仔，各路方言等你來解鎖！">
   <meta name="keywords" content="台灣啤酒、台啤、經典、台味啤酒、台灣囡仔、囡仔、啤酒、啤酒推薦、twbeer、beer ">
   <meta property="og:title" content="台灣啤酒 – 經典台灣囡仔" />
@@ -442,9 +443,11 @@
     <div class="game_bgDown bgDownmbnone"></div>
     <footer></footer>
   </div>
+  <canvas id="cvs-fb" width="600" height="315" style="display: none"></canvas>
 </body>
 <script src="js/index.js"></script>
 <script src="js/game_hover.js"></script>
+<!-- <script src="js/share.js"></script> -->
 <script>
   var getGender = '';
   var getQuest = '';
@@ -583,6 +586,9 @@
   $('.get-result').on('click', function(){
     $('.check-block').fadeOut(500, function(){
       $('.loading-block').fadeIn(300);
+      // FB.getLoginStatus(function (response) {
+      //   checkFbLoginStatus(response);
+      // });
     });
     setTimeout(function(){
       $('.loading-block').fadeOut(500, function(){
