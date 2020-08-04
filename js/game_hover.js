@@ -1,8 +1,8 @@
 // hover事件
-$('.get-result').hover(function(){
-    $('.get-result img').attr("src", "img/makeResult_hover.png");
+$('.resultBtn').hover(function(){
+    $('.resultBtn img').attr("src", "img/makeResult_hover.png");
 },function(){
-    $('.get-result img').attr("src", "img/makeResult.png")
+    $('.resultBtn img').attr("src", "img/makeResult.png")
 });
 
 // 男

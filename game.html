@@ -67,7 +67,7 @@
       </ul>
     </div>
     <div class="mainContainer">
-      <div id="myGender" class="genderCard" style="display: none;">
+      <div id="myGender" class="genderCard">
         <div class="genderBody">
           <div class="genderSelect">
             <img src="img/gender/genderTitle.png" alt="">
@@ -418,14 +418,14 @@
         </div>
 
         <div class="checkButton">
-          <div class="myBtn get-result-1" style="display: none;"><img src="img/makeResult.png" alt=""></div>
-          <div class="myBtn get-result-2" style="display: none;"><img src="img/makeResult.png" alt=""></div>
+          <div class="myBtn resultBtn get-result-1" style="display: none;"><img src="img/makeResult.png" alt=""></div>
+          <div class="myBtn resultBtn get-result-2" style="display: none;"><img src="img/makeResult.png" alt=""></div>
         </div>
       </div>
       <div class="loading-block">
         <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> 
       </div>
-      <div class="result-block" style="display: block;">
+      <div class="result-block">
         <div class="jumbotron">
           <img src="img/result_title.png" alt="">
         </div>
@@ -471,7 +471,9 @@
         $('#famaleQuest').fadeIn(500);
       },1000);
     }
-    $('footer').addClass('footer_w');
+    setTimeout(function(){
+      $('footer').addClass('footer_w');
+    },1000)
   }
   // 下一題
   function changeQuest(y,z){
@@ -494,71 +496,81 @@
       getQuest = '6';
     }
     if(z == 1){
-      $('.qa_card01').removeClass('activityTopic').addClass('agoTopic');
-      $('.ge_card01').removeClass('activeGender').addClass('agoGender');
       setTimeout(function(){
-        $('.qa_card02').removeClass('waitTopic').addClass('activityTopic');
+        $('.qa_card01').removeClass('activityTopic').addClass('agoTopic');
+        $('.ge_card01').removeClass('activeGender').addClass('agoGender');
+        setTimeout(function(){
+          $('.qa_card02').removeClass('waitTopic').addClass('activityTopic');
 
-        $('.ge_card02').removeClass('waitGender').addClass('activeGender');
-      },1000)
+          $('.ge_card02').removeClass('waitGender').addClass('activeGender');
+        },1000)
+      },200)
     }
     if(z == 2){
-      $('.qa_card02').removeClass('activityTopic').addClass('agoTopic');
-      $('.ge_card02').removeClass('activeGender').addClass('agoGender');
       setTimeout(function(){
-        $('.qa_card03').removeClass('waitTopic').addClass('activityTopic');
-        $('.ge_card03').removeClass('waitGender').addClass('activeGender');
-      },1000)
+        $('.qa_card02').removeClass('activityTopic').addClass('agoTopic');
+        $('.ge_card02').removeClass('activeGender').addClass('agoGender');
+        setTimeout(function(){
+          $('.qa_card03').removeClass('waitTopic').addClass('activityTopic');
+          $('.ge_card03').removeClass('waitGender').addClass('activeGender');
+        },1000)
+      },200)
     }
     if(z == 3){
-      $('.qa_card03').removeClass('activityTopic').addClass('agoTopic');
-      $('.ge_card03').removeClass('activeGender').addClass('agoGender');
       setTimeout(function(){
-        $('.qa_card04').removeClass('waitTopic').addClass('activityTopic');
-        $('.ge_card04').removeClass('waitGender').addClass('activeGender');
-      },1000)
+        $('.qa_card03').removeClass('activityTopic').addClass('agoTopic');
+        $('.ge_card03').removeClass('activeGender').addClass('agoGender');
+        setTimeout(function(){
+          $('.qa_card04').removeClass('waitTopic').addClass('activityTopic');
+          $('.ge_card04').removeClass('waitGender').addClass('activeGender');
+        },1000)
+      },200)
     }
     if(z == 4){
-      $('.qa_card04').removeClass('activityTopic').addClass('agoTopic');
-      $('.ge_card04').removeClass('activeGender').addClass('agoGender');
       setTimeout(function(){
-        $('.qa_card05').removeClass('waitTopic').addClass('activityTopic');
-        $('.ge_card05').removeClass('waitGender').addClass('activeGender');
-      },1000)
+        $('.qa_card04').removeClass('activityTopic').addClass('agoTopic');
+        $('.ge_card04').removeClass('activeGender').addClass('agoGender');
+        setTimeout(function(){
+          $('.qa_card05').removeClass('waitTopic').addClass('activityTopic');
+          $('.ge_card05').removeClass('waitGender').addClass('activeGender');
+        },1000)
+      },200)
     }
     if(z == 5){
-      $('.qa_card05').removeClass('activityTopic').addClass('agoTopic');
-
-      $('.ge_card05').removeClass('activeGender').addClass('agoGender');
       setTimeout(function(){
-        $('.topic').fadeOut(500);
+        $('.qa_card05').removeClass('activityTopic').addClass('agoTopic');
+
+        $('.ge_card05').removeClass('activeGender').addClass('agoGender');
         setTimeout(function(){
-          $('.check-block').fadeIn(500);
-          // 罐子
+          $('.topic').fadeOut(500);
           setTimeout(function(){
-            $('.can01_2').css({"opacity":"1", "top":"0px"});
-          },200)
-          setTimeout(function(){
-            $('.can02_2').css({"opacity":"1", "top":"0px"});
-          },300)
-          setTimeout(function(){
-            $('.can03_2').css({"opacity":"1", "top":"0px"});
-          },400)
-          setTimeout(function(){
-            $('.can04_2').css({"opacity":"1", "top":"0px"});
+            $('.check-block').fadeIn(500);
+            $('footer').removeClass('footer_w');
+            // 罐子
+            setTimeout(function(){
+              $('.can01_2').css({"opacity":"1", "top":"0px"});
+            },200)
+            setTimeout(function(){
+              $('.can02_2').css({"opacity":"1", "top":"0px"});
+            },300)
+            setTimeout(function(){
+              $('.can03_2').css({"opacity":"1", "top":"0px"});
+            },400)
+            setTimeout(function(){
+              $('.can04_2').css({"opacity":"1", "top":"0px"});
+            },500)
+            setTimeout(function(){
+              $('.can05_2').css({"opacity":"1", "top":"0px"});
+            },600)
+            setTimeout(function(){
+              $('.can06_2').css({"opacity":"1", "top":"0px"});
+            },700)
+            setTimeout(function(){
+              $('.can07_2').css({"opacity":"1", "top":"0px"});
+            },800);
           },500)
-          setTimeout(function(){
-            $('.can05_2').css({"opacity":"1", "top":"0px"});
-          },600)
-          setTimeout(function(){
-            $('.can06_2').css({"opacity":"1", "top":"0px"});
-          },700)
-          setTimeout(function(){
-            $('.can07_2').css({"opacity":"1", "top":"0px"});
-          },800);
         },500)
-      },500)
-      $('footer').removeClass('footer_w');
+      },200)
     }
   }
   // 重新開始
@@ -579,12 +591,12 @@
   })
   
 $('.get-result-1').on('click', function () {
-  $('footer').addClass('footer_w');
 
     FB.login(function (response) {
       if (response.status === 'connected') {
         $('.check-block').fadeOut(500, function () {
           $('.loading-block').fadeIn(300);
+          $('footer').addClass('footer_w');
           ProfileAPI();
           //console.log('facebook connected');
         });
@@ -597,13 +609,13 @@ $('.get-result-1').on('click', function () {
   });
 
   $('.get-result-2').on('click', function () {
-    $('footer').addClass('footer_w');
 
     FB.getLoginStatus(function (response) {
       if (response.status === 'connected') {
         console.log('登入中');
         $('.check-block').fadeOut(500, function () {
             $('.loading-block').fadeIn(300);
+            $('footer').addClass('footer_w');
             ProfileAPI();
             // console.log('facebook connected');
         });

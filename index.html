@@ -23,6 +23,9 @@
   <!-- <script src="js/bootstrap.min.js"></script> -->
 </head>
 <body>
+  <div class="loader">
+    <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> 
+  </div>
   <div class="mainContent">
     <div class="nav">
       <div class="container menuPc">
@@ -221,10 +224,17 @@
       location.href = 'age-confirm.html';
   }
   var myVoice = document.getElementById('myVoice');
-  setTimeout(function(){
-    cans();
-    texts();
-  },10);
+  window.addEventListener("load", function(){
+    const loader = document.querySelector('.loader');
+    setTimeout(function(){
+      loader.className += ' hidden' // class "loader hidden"
+      setTimeout(function() {
+        $('.loader').addClass('load_idx');
+      },1000);
+      cans();
+      texts();
+    },1000);
+  })
   function voice(x){
     if(x == 1){
       $('#myVoice').attr('src', 'img/mp3/minna_08.mp3');
