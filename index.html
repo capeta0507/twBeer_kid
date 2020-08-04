@@ -236,7 +236,13 @@
   </div>
 </body>
 <script src="js/index.js"></script>
+<script src="js/jquery.cookie.min.js"></script>
 <script>
+  // 判斷是否已經驗證年齡
+  var isOver18 = $.cookie('isOver18');
+  if (isOver18 == null) {
+      location.href = 'age-confirm.html';
+  }
   var myVoice = document.getElementById('myVoice');
   setTimeout(function(){
     $('#falseLoad').fadeOut(500);

@@ -39,6 +39,7 @@
   </div>
 </body>
 <script src="js/index.js"></script>
+<script src="js/jquery.cookie.min.js"></script>
 <script>
   $('.linkYes').hover(function(){
     $('.linkYes img').attr("src", "img/age/yes_hover.png");
@@ -50,5 +51,12 @@
   },function(){
       $('.linkNo img').attr("src", "img/age/no.png")
   });
+
+  $('.linkYes').on('click', function(){
+    // 通過驗證, 設定cookie
+    $.cookie('isOver18', 'Yes', {
+      expires: 30
+    });
+  })
 </script>
 </html>

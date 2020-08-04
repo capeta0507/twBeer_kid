@@ -152,8 +152,8 @@ function submitForm() {
         dataType: 'json',
         success: function (response) {
             pic_code = response.code;
-//            share_url = 'https://www.twbeer-classic2020.tw/demo/share.php?code=' + response.code
-            share_url = 'https://www.twbeer-classic2020.tw/share.php?code=' + response.code
+           share_url = 'https://www.twbeer-classic2020.tw/demo/share.php?code=' + response.code
+            // share_url = 'https://www.twbeer-classic2020.tw/share.php?code=' + response.code
 
             $('.loading-block').fadeOut(500, function () {
                 $('.result-block').fadeIn(500);
@@ -183,8 +183,11 @@ function fb_share() {
     }, function (response) {
         if (response && !response.error_message) {
             alert('分享成功');
+            window.location = 'index.html';
+
         } else {
             alert('分享至FACEBOOK失敗');
+
         }
 
     });
