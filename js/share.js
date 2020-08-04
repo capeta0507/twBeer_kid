@@ -9,7 +9,7 @@ window.fbAsyncInit = function () {
         version: 'v7.0'
     });
 
-    // FB.AppEvents.logPageView();
+    FB.AppEvents.logPageView();
 
     FB.getLoginStatus(function (response) { // Called after the JS SDK has been initialized.
         statusChangeCallback(response); // Returns the login status.
@@ -75,7 +75,7 @@ function createSharePic(userid, username) {
 //    console.log(userid);
 
     var photo_url = 'https://graph.facebook.com/' + userid + '/picture?type=large';
-    
+
     //結果頁
     var cvs_result = document.getElementById("myResult");
     var result_context = cvs_result.getContext('2d');
@@ -100,7 +100,7 @@ function createSharePic(userid, username) {
 
     }
     result_bg.src = 'img/share_bg/result/' + base_img + '.jpg';
-    
+
     //分享用
     var cvs_fb = document.getElementById("cvs-fb");
     var fb_context = cvs_fb.getContext('2d');
@@ -126,9 +126,9 @@ function createSharePic(userid, username) {
 
     }
     fb_Share_bg.src = 'img/share_bg/' + base_img + '.jpg';
-    
-    
-    
+
+
+
 
 }
 
@@ -152,19 +152,20 @@ function submitForm() {
         dataType: 'json',
         success: function (response) {
             pic_code = response.code;
-           share_url = 'https://www.twbeer-classic2020.tw/demo/share.php?code=' + response.code
-            // share_url = 'https://www.twbeer-classic2020.tw/share.php?code=' + response.code
+//            share_url = 'https://www.twbeer-classic2020.tw/demo/share.php?code=' + response.code
+            share_url = 'https://www.twbeer-classic2020.tw/demo/share.php?code=' + response.code
 
             $('.loading-block').fadeOut(500, function () {
                 $('.result-block').fadeIn(500);
             });
-//            recordPlayCount(pic_code, gender, answer);
+
+            trackDoneQuiz(pic_code, getGender, getQuest);
 
 //            alert('上傳成功');
 
         },
         error: function (error) {
-            alert('上傳失敗');
+            alert('圖片合成錯誤');
         },
         complete: function (response) {}
     });
@@ -182,12 +183,12 @@ function fb_share() {
         hashtag: "#台啤經典台灣囡仔",
     }, function (response) {
         if (response && !response.error_message) {
+            trackFbShare(pic_code, '1');
             alert('分享成功');
             window.location = 'index.html';
-
         } else {
-            alert('分享至FACEBOOK失敗');
-
+            trackFbShare(pic_code, '0');
+            alert('未分享至FACEBOOK');
         }
 
     });
@@ -195,16 +196,15 @@ function fb_share() {
 }
 
 function statusChangeCallback(response) {
-    //                console.log('statusChangeCallback');
 //    console.log(response);
     if (response.status === 'connected') {
-        console.log('登入中');
+//        console.log('connected');
         $(".get-result-1").hide(function () {
             $(".get-result-2").show();
         });
 
     } else {
-        console.log('未登入');
+//        console.log('Not yet connected');
         $(".get-result-2").hide(function () {
             $(".get-result-1").show();
         });
@@ -214,7 +214,7 @@ function statusChangeCallback(response) {
 function trackDoneQuiz(pic_code, gender, answer) {
 
     var data = {'pic_code': pic_code, 'gender': gender, 'q1_answer': answer};
- 
+
     $.ajax({
         type: "POST",
         url: "API/track_Done_Quiz.php",
@@ -222,13 +222,13 @@ function trackDoneQuiz(pic_code, gender, answer) {
         dataType: 'json',
         success: function (response) {
             if (response.status == 1) {
-                console.log('紀錄成功');
+                console.log('Record success');
             } else {
                 console.log(response.msg);
             }
         },
         error: function (error) {
-            console.log('紀錄錯誤');
+            console.log('Record failure');
         },
         complete: function (response) {
         }
@@ -248,13 +248,13 @@ function trackFbShare(pic_code, share_status) {
         dataType: 'json',
         success: function (response) {
             if (response.status == 1) {
-                console.log('紀錄成功');
+                console.log('Record success');
             } else {
                 console.log(response.msg);
             }
         },
         error: function (error) {
-            console.log('紀錄錯誤');
+            console.log('Record failure');
         },
         complete: function (response) {
         }
@@ -274,13 +274,13 @@ function trackVoiceClick(no) {
         dataType: 'json',
         success: function (response) {
             if (response.status == 1) {
-                console.log('紀錄成功');
+                console.log('Record success');
             } else {
                 console.log(response.msg);
             }
         },
         error: function (error) {
-            console.log('紀錄錯誤');
+            console.log('Record failure');
         },
         complete: function (response) {
         }
@@ -300,13 +300,13 @@ function trackStartQuiz() {
         dataType: 'json',
         success: function (response) {
             if (response.status == 1) {
-                console.log('紀錄成功');
+                console.log('Record success');
             } else {
                 console.log(response.msg);
             }
         },
         error: function (error) {
-            console.log('紀錄錯誤');
+            console.log('Record failure');
         },
         complete: function (response) {
         }

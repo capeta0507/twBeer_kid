@@ -121,10 +121,10 @@
     </div>
     <div class="indexBg"></div>
     <div class="mbIdx_btn">
-      <a href="game.html">
+      <a class="mygameLink" href="game.html">
         <img src="img/mbGame.png" alt="">
       </a>
-      <a href="#myDialect">
+      <a class="mydialectLink" href="#myDialect">
         <img src="img/mbDialoect.png" alt="">
       </a>
     </div>
@@ -328,5 +328,16 @@
     $('.home_text05').css({"opacity":"1", "top":"0px"});
   },900);
 }
+// hover事件
+$('.mygameLink').hover(function(){
+    $('.mygameLink img').attr("src", "img/mbGame_hover.png");
+},function(){
+    $('.mygameLink img').attr("src", "img/mbGame.png")
+});
+$('.mydialectLink').hover(function(){
+    $('.mydialectLink img').attr("src", "img/mbDialoect_hover.png");
+},function(){
+    $('.mydialectLink img').attr("src", "img/mbDialoect.png")
+});
 </script>
 </html>
