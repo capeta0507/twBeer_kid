@@ -1660,8 +1660,8 @@ footer{
         position: relative;
     }
     .genderCard{
-        width: 90%;
-        margin-top: 18vh;
+        width: 70%;
+        margin-top: 10vh;
         margin-bottom: 0;
     }
     .genderSelect{
@@ -1971,5 +1971,10 @@ footer{
     .smoke_right{
         top: 100px;
         right: -45px;
+    }
+    .genderCard{
+        width: 90%;
+        margin-top: 18vh;
+        margin-bottom: 0;
     }
 }
