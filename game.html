@@ -91,7 +91,7 @@
           </div>
         </div>
         <div class="genderRight">
-          <img src="img/gender/home_logo.png" alt="">
+          <img src="img/gender/gender_logo.png" alt="">
         </div>
       </div>
       <!-- 男 -->
@@ -116,7 +116,7 @@
             <img src="img/gender/male/male_questionImg05.png" alt="">
           </div>
           <div class="rightImg">
-            <img src="img/question/question_right.png" alt="">
+            <img src="img/gender/gender_logo.png" alt="">
           </div>
         </div>
         <div class="topicContent">
@@ -269,7 +269,7 @@
             <img src="img/gender/female/female_questionImg05.png" alt="">
           </div>
           <div class="rightImg">
-            <img src="img/question/question_right.png" alt="">
+            <img src="img/gender/gender_logo.png" alt="">
           </div>
         </div>
         <div class="topicContent">
@@ -408,20 +408,23 @@
           <img id="genderTag" src="img/gender/maleImg.png" alt="">
         </div>
         <div class="canBlock">
-          <img src="img/can_1.png" alt="" class="canImg can01 ">
-          <img src="img/can_2.png" alt="" class="canImg can02 ">
-          <img src="img/can_3.png" alt="" class="canImg can03 ">
-          <img src="img/can_4.png" alt="" class="canImg can04 ">
-          <img src="img/can_5.png" alt="" class="canImg can05 ">
-          <img src="img/can_6.png" alt="" class="canImg can06 ">
-          <img src="img/can_7.png" alt="" class="canImg can07 ">
+          <img src="img/can_1.png" alt="" class="canImg2 can01_2 ">
+          <img src="img/can_2.png" alt="" class="canImg2 can02_2 ">
+          <img src="img/can_3.png" alt="" class="canImg2 can03_2 ">
+          <img src="img/can_4.png" alt="" class="canImg2 can04_2 ">
+          <img src="img/can_5.png" alt="" class="canImg2 can05_2 ">
+          <img src="img/can_6.png" alt="" class="canImg2 can06_2 ">
+          <img src="img/can_7.png" alt="" class="canImg2 can07_2 ">
         </div>
 
         <div class="checkButton">
           <div class="myBtn get-result-1" style="display: none;"><img src="img/makeResult.png" alt=""></div>
           <div class="myBtn get-result-2" style="display: none;"><img src="img/makeResult.png" alt=""></div>
         </div>
-        <div class="ageBar"></div>
+        <div class="ageBar2">
+          <img class="mbnone" src="img/age/age_pc.png" alt="">
+          <img class="mbBlock" src="img/age/ageImg.png" alt="">
+        </div>
       </div>
       <div class="loading-block">
         <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> 
@@ -537,25 +540,25 @@
           $('.check-block').fadeIn(500);
           // 罐子
           setTimeout(function(){
-            $('.can01').css({"opacity":"1", "top":"0px"});
+            $('.can01_2').css({"opacity":"1", "top":"0px"});
           },200)
           setTimeout(function(){
-            $('.can02').css({"opacity":"1", "top":"0px"});
+            $('.can02_2').css({"opacity":"1", "top":"0px"});
           },300)
           setTimeout(function(){
-            $('.can03').css({"opacity":"1", "top":"0px"});
+            $('.can03_2').css({"opacity":"1", "top":"0px"});
           },400)
           setTimeout(function(){
-            $('.can04').css({"opacity":"1", "top":"0px"});
+            $('.can04_2').css({"opacity":"1", "top":"0px"});
           },500)
           setTimeout(function(){
-            $('.can05').css({"opacity":"1", "top":"0px"});
+            $('.can05_2').css({"opacity":"1", "top":"0px"});
           },600)
           setTimeout(function(){
-            $('.can06').css({"opacity":"1", "top":"0px"});
+            $('.can06_2').css({"opacity":"1", "top":"0px"});
           },700)
           setTimeout(function(){
-            $('.can07').css({"opacity":"1", "top":"0px"});
+            $('.can07_2').css({"opacity":"1", "top":"0px"});
           },800);
         },500)
       },500)
@@ -576,7 +579,7 @@
       $('#myGender').fadeIn(500);
       $('footer').removeClass('footer_w');
     },500)
-    $('.canImg').removeAttr('style');
+    $('.canImg2').removeAttr('style');
   })
   
 $('.get-result-1').on('click', function () {

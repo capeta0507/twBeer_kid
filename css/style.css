@@ -338,7 +338,7 @@ body{
     width: 100%;
 }
 .canBlock{
-    width: 500px;
+    width: 35%;
     margin: 0 auto;
     position: relative;
 }
@@ -405,6 +405,47 @@ body{
 .can07{
     top: -50px;
     left: 90%;
+    opacity: 0;
+}
+/* 結果頁 */
+.canImg2{
+    width: 13.5%;
+    position: relative;
+    transition: all .7s;
+}
+.can01_2{
+    top: -50px;
+    left: 0;
+    opacity: 0;
+}
+.can02_2{
+    top: -50px;
+    left: 0%;
+    opacity: 0;
+}
+.can03_2{
+    top: -50px;
+    left: 0%;
+    opacity: 0;
+}
+.can04_2{
+    top: -50px;
+    left: 0%;
+    opacity: 0;
+}
+.can05_2{
+    top: -50px;
+    left: 0%;
+    opacity: 0;
+}
+.can06_2{
+    top: -50px;
+    left: 0%;
+    opacity: 0;
+}
+.can07_2{
+    top: -50px;
+    left: 0%;
     opacity: 0;
 }
 .homeRight{
@@ -513,18 +554,18 @@ body{
 .slick-next img, .slick-prev img{
     transition: all .7s;
 }
-.single-item-mb:hover .slick-next img{
+/* .single-item-mb:hover .slick-next img{
     transform: scale3d(2.1, 2.1, 1);
 }
 .single-item-mb:hover .slick-prev img{
     transform: scale3d(2.1, 2.1, 1);
-}
-/* .slick-next img:hover {
+} */
+.slick-next img:hover {
     transform: scale3d(2.1, 2.1, 1);
 }
 .slick-prev img:hover {
     transform: scale3d(2.1, 2.1, 1);
-} */
+}
 .leftBtn{
 	width: 100%;
 }
@@ -1009,7 +1050,7 @@ footer{
 .checkButton{
     width: 15%;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 2vh;
     margin-bottom: 50px;
     cursor: pointer;
 }
@@ -1762,6 +1803,18 @@ footer{
     }
 }
 @media screen and (max-width: 500px){
+    .topic {
+        width: 100%;
+        display: none;
+        color: #fff;
+        padding-top: 0;
+        margin-top: 70px;
+    }
+    .checkTitle {
+        width: 30%;
+        margin: 0 auto;
+        margin-top: 5vh;
+    }
     .mbAgeContain{
         width: 100%;
         margin: 0 auto;
