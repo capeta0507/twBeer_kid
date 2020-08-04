@@ -11,9 +11,9 @@ window.fbAsyncInit = function () {
 
     // FB.AppEvents.logPageView();
 
-//    FB.getLoginStatus(function (response) { // Called after the JS SDK has been initialized.
-//        statusChangeCallback(response); // Returns the login status.
-//    });
+    FB.getLoginStatus(function (response) { // Called after the JS SDK has been initialized.
+        statusChangeCallback(response); // Returns the login status.
+    });
 
 };
 
@@ -29,21 +29,21 @@ window.fbAsyncInit = function () {
 }(document, 'script', 'facebook-jssdk'));
 
 
-function checkFbLoginStatus(response) {
-    if (response.status === 'connected') {
-        ProfileAPI();
-    } else {
-        FB.login(function (response) {
-            if (response.status === 'connected') {
-                ProfileAPI();
-                console.log('facebook connected');
-            } else {
-                console.log('facebook not connected');
-            }
-        }, {scope: 'public_profile,email'});
-
-    }
-}
+//function checkFbLoginStatus(response) {
+//    if (response.status === 'connected') {
+//        ProfileAPI();
+//    } else {
+//        FB.login(function (response) {
+//            if (response.status === 'connected') {
+//                ProfileAPI();
+//                console.log('facebook connected');
+//            } else {
+//                console.log('facebook not connected');
+//            }
+//        }, {scope: 'public_profile,email'});
+//
+//    }
+//}
 
 
 function ProfileAPI() {
@@ -179,7 +179,7 @@ function fb_share() {
     FB.ui({
         method: 'share',
         href: share_url,
-        hashtag: "#台灣啤酒",
+        hashtag: "#台啤經典台灣囡仔",
     }, function (response) {
         if (response && !response.error_message) {
             alert('分享成功');
@@ -193,20 +193,18 @@ function fb_share() {
 
 function statusChangeCallback(response) {
     //                console.log('statusChangeCallback');
-    console.log(response);
+//    console.log(response);
     if (response.status === 'connected') {
         console.log('登入中');
-//        fbLoginStatus = true;
-//        $("#FB_login").hide(function () {
-//            $("#FB_logout").show();
-//        });
+        $(".get-result-1").hide(function () {
+            $(".get-result-2").show();
+        });
 
     } else {
         console.log('未登入');
-//        fbLoginStatus = false;
-//        $("#FB_logout").hide(function () {
-//            $("#FB_login").show();
-//        });
+        $(".get-result-2").hide(function () {
+            $(".get-result-1").show();
+        });
     }
 }
 
