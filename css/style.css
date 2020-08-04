@@ -1129,6 +1129,12 @@ footer{
 .mbnone{
     display: block;
 }
+.mbnone500{
+    display: block;
+}
+.mbBlock500{
+    display: none;
+}
 .mbnoneFlex{
     display: flex;
 }
@@ -1857,6 +1863,12 @@ footer{
     }
 }
 @media screen and (max-width: 500px){
+    .mbnone500{
+        display: none;
+    }
+    .mbBlock500{
+        display: block;
+    }
     .topic {
         width: 100%;
         display: none;
