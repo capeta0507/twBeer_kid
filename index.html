@@ -211,29 +211,6 @@
     </div>
     <footer></footer>
   </div>
-  <div id="falseLoad" class="mainContent falseLoad">
-    <div class="mbLoadContain">
-      <div class="loadingLogo">
-        <img src="img/age/logom.png" alt="">
-      </div>
-      <div class="loadText">
-        <p>世代在變，經典流行語的精神不變</p>
-        <div>
-          找回過往記憶與現代生活的連結<br>
-          20、30、40世代站出來<br>
-          一起做個經經典典的台灣囡仔
-        </div>
-      </div>
-    </div>
-    <div class="loadWait">
-      <div class="readyText">
-        <img src="img/loading_text.png" alt="">
-      </div>
-      <img class="mbBlock" src="img/loading.gif" alt="">
-      <img class="mbnone" src="img/loading_pc.gif" alt="">
-    </div>
-    <footer></footer>
-  </div>
 </body>
 <script src="js/index.js"></script>
 <script src="js/jquery.cookie.min.js"></script>
@@ -245,10 +222,9 @@
   }
   var myVoice = document.getElementById('myVoice');
   setTimeout(function(){
-    $('#falseLoad').fadeOut(500);
     cans();
     texts();
-  },2500);
+  },10);
   function voice(x){
     if(x == 1){
       $('#myVoice').attr('src', 'img/mp3/minna_08.mp3');

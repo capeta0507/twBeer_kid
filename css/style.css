@@ -289,10 +289,9 @@ body{
     padding-bottom: 15vh;
 }
 .mbAgeContain{
-    width: 100%;
-    max-width: 650px;
+    width: 40%;
     margin: 0 auto;
-    padding-top: 70px;
+    padding-top: 20px;
     padding-bottom: 15vh;
 }
 /* index */
@@ -658,13 +657,13 @@ body{
 .ageBorder{
     width: 80%;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 25px;
     border: 1px solid #000;
 }
 .ageText{
     width: 70%;
     margin: 0px auto;
-    margin-top: 30px;
+    margin-top: 25px;
     margin-bottom: 20px;
 }
 .ageText img{
@@ -689,11 +688,21 @@ body{
     position: absolute;
     bottom: 12vh;
     left: 0;
-    height: 350px;
+    height: 27vh;
     background: url(../img/age/age_pc.png) no-repeat;
     background-position-x: -20%;
     background-position-y: 0%;
     background-size: 100%;
+}
+.ageBar2{
+    width: 100%;
+    position: absolute;
+    bottom: 12vh;
+    left: 0;
+}
+.ageBar2 img{
+    width: 100%;
+    height: auto;
 }
 .linkNo{
     cursor: pointer;
@@ -805,11 +814,9 @@ footer{
 }
 .genderCard{
     width: 30%;
-    /* max-width: 500px; */
     margin: 0 auto;
     display: flex;
-    margin-top: 18vh;
-    margin-bottom: 15vh;
+    margin-top: 15vh;
     justify-content: space-between;
 }
 .genderSelect{
@@ -854,12 +861,12 @@ footer{
     width: 100%;
 }
 .topic{
-    width: 100%;
-    max-width: 1600px;
+    width: 80%;
+    /* max-width: 1600px; */
     margin: 0 auto;
     display: none;
     color: #fff;
-    padding-top: 190px;
+    padding-top: 100px;
 }
 .topicImg{
     width: 100%;
@@ -969,12 +976,6 @@ footer{
     color: #fff;
     padding-top: 70px;
 }
-.game_bg{
-    background-image: url(../img/game_bg.png);
-    background-repeat: repeat-x;
-    background-size: 110%;
-    background-position-y: 1%;
-}
 .game_outbg{
     background-image: url(../img/game_bg.png);
     background-repeat: repeat-x;
@@ -986,17 +987,6 @@ footer{
     background-repeat: repeat-x;
     background-size: 110%;
     background-position-y: -10%;
-}
-.game_bgDown{
-    width: 100%;
-    position: absolute;
-    height: 140px;
-    bottom: 10vh;
-    background-image: url(../img/game_bg.png);
-    background-repeat: repeat-x;
-    background-size: 110%;
-    background-position-y: -8%;
-    /* z-index: -1; */
 }
 .jumbotron{
     width: 10%;
@@ -1010,7 +1000,7 @@ footer{
 .checkTitle{
     width: 10%;
     margin: 0 auto;
-    margin-top: 9vh;
+    margin-top: 0vh;
 }
 .checkTitle img{
     width: 100%;
@@ -1094,8 +1084,8 @@ footer{
         padding-bottom: 15vh;
     }
     .topic{
-        width: 100%;
-        max-width: 1300px;
+        width: 80%;
+        /* max-width: 1300px; */
     }
     .topicContent{
         width: 100%;
@@ -1106,7 +1096,7 @@ footer{
         left: 130%;
     }
     .ageBar{
-        height: 250px;
+        height: 25vh;
     }
     .wait_bg{
         background-size: 140%;
@@ -1121,11 +1111,12 @@ footer{
         padding-top: 140px;
     }
     .topic{
-        width: 100%;
-        max-width: 1200px;
+        width: 80%;
+        /* max-width: 1200px; */
         padding-top: 70px;
     }
     .ageBar{
+        height: 27vh;
         bottom: 10vh;
     }
     .game_outbg{
@@ -1157,9 +1148,6 @@ footer{
     .icon > a{
         margin-right: 15px;
     }
-    .game_bgDown{
-        bottom: -23vh;
-    }
     .ageLogo {
         width: 40%;
         margin: 0 auto;
@@ -1189,12 +1177,11 @@ footer{
         margin-bottom: 0;
     }
     .genderCard{
-        width: 40%;
-        max-width: 470px;
+        width: 26%;
         margin: 0 auto;
         display: flex;
-        margin-top: 18vh;
-        margin-bottom: 15vh;
+        margin-top: 15vh;
+        margin-bottom: 0;
         justify-content: space-between;
     }
     .waitGender{
@@ -1223,9 +1210,6 @@ footer{
     }
 }
 @media screen and (max-width: 1280px){
-    .game_bgDown {
-        bottom: -5vh;
-    }
     .mainContainer{
         margin-bottom: 0;
     }
@@ -1234,8 +1218,7 @@ footer{
         bottom: 3%;
     }
     .genderCard{
-        width: 100%;
-        max-width: 500px;
+        width: 30%;
     }
     .slickContent{
         width: 32%;
@@ -1281,9 +1264,6 @@ footer{
     }
     .navfive{
         width:35%;
-    }
-    .game_bgDown {
-        bottom: 10vh;
     }
     .mainContainer{
         margin-bottom: 0;
@@ -1384,10 +1364,9 @@ footer{
         padding-bottom: 15vh;
     }
     .mbAgeContain{
-        width: 100%;
-        max-width: 500px;
+        width: 80%;
         margin: 0 auto;
-        padding-top: 70px;
+        padding-top: 30px;
         padding-bottom: 15vh;
     }
     .wait_bg{
@@ -1402,7 +1381,7 @@ footer{
     .checkTitle{
         width: 30%;
         margin: 0 auto;
-        margin-top: 9vh;
+        margin-top: 0vh;
     }
     .checkButton{
         width: 45%;
@@ -1566,7 +1545,7 @@ footer{
     .genderCard{
         width: 90%;
         margin-top: 18vh;
-        margin-bottom: 10vh;
+        margin-bottom: 0;
     }
     .genderSelect{
         width: 90%;
@@ -1588,7 +1567,7 @@ footer{
         width: 50%;
     }
     .topic{
-        width: 100%;
+        width: 90%;
         display: none;
         color: #fff;
         padding-top: 0;
@@ -1744,21 +1723,11 @@ footer{
         color: #fff;
         padding-top: 70px;
     }
-    .game_bg{
-        background-image: url(../img/game_bg.png);
-        background-repeat: repeat-x;
-        background-size: 120%;
-        background-position-y: 1%;
-    }
     .game_outbg{
         background-image: url(../img/game_bg.png);
         background-repeat: repeat-x;
         background-size: 300%;
         background-position-y: -3%;
-    }
-    .game_bgDown{
-        height: 150px;
-        background-size: 240%;
     }
     .jumbotron{
         width: 40%;
@@ -1793,6 +1762,12 @@ footer{
     }
 }
 @media screen and (max-width: 500px){
+    .mbAgeContain{
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-bottom: 15vh;
+    }
     .canBlock {
         width: 80%;
     }
@@ -1821,11 +1796,6 @@ footer{
     }
     .game_outbg{
         background-position-y: 2%;
-    }
-    .game_bgDown{
-        position: relative;
-        height: 80px;
-        background-size: 230%;
     }
     .resultContent .myBtn{
         width: 70%;

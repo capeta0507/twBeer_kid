@@ -17,7 +17,7 @@
   <script src="js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
-  <div class="mainContent game_outbg">
+  <div class="mainContent">
     <div class="nav">
       <div class="container">
         <div class="logo">
@@ -94,7 +94,6 @@
           <img src="img/gender/home_logo.png" alt="">
         </div>
       </div>
-      <div class="game_bgDown bgDownmbBlock"></div>
       <!-- 男 -->
       <div id="maleQuest" class="topic">
         <div class="topicImg">
@@ -167,7 +166,7 @@
                 <img src="img/question/male/male_q205.png" alt="">
               </div>
               <div class="iptImg mq2_6" onclick="changeQuest(6,2)">
-                <img src="img/question/male/male_q106.png" alt="">
+                <img src="img/question/male/male_q206.png" alt="">
               </div>
             </div>
           </div>
@@ -192,7 +191,7 @@
                 <img src="img/question/male/male_q305.png" alt="">
               </div>
               <div class="iptImg mq3_6" onclick="changeQuest(6,3)">
-                <img src="img/question/male/male_q106.png" alt="">
+                <img src="img/question/male/male_q306.png" alt="">
               </div>
             </div>
           </div>
@@ -217,7 +216,7 @@
                 <img src="img/question/male/male_q405.png" alt="">
               </div>
               <div class="iptImg mq4_6" onclick="changeQuest(6,4)">
-                <img src="img/question/male/male_q106.png" alt="">
+                <img src="img/question/male/male_q406.png" alt="">
               </div>
             </div>
           </div>
@@ -242,7 +241,7 @@
                 <img src="img/question/male/male_q505.png" alt="">
               </div>
               <div class="iptImg mq5_6" onclick="changeQuest(6,5)">
-                <img src="img/question/male/male_q106.png" alt="">
+                <img src="img/question/male/male_q506.png" alt="">
               </div>
             </div>
           </div>
@@ -442,7 +441,6 @@
         </div>
       </div>
     </div>
-    <div class="game_bgDown bgDownmbnone"></div>
     <footer></footer>
   </div>
   <canvas id="cvs-fb" width="600" height="315" style="display: none"></canvas>
@@ -474,7 +472,6 @@
         $('#famaleQuest').fadeIn(500);
       },1000);
     }
-    $('.game_bgDown').fadeOut(500);
     $('footer').addClass('footer_w');
   }
   // 下一題
@@ -578,11 +575,6 @@
       $('.qa_card01').removeClass('waitTopic').addClass('activityTopic');
       $('#myGender').fadeIn(500);
       $('footer').removeClass('footer_w');
-      if(getWidth < 992){
-        $('.bgDownmbBlock').fadeIn(500);
-      } else {
-        $('.bgDownmbnone').fadeIn(500);
-      }
     },500)
     $('.canImg').removeAttr('style');
   })
