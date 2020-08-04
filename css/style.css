@@ -1061,12 +1061,12 @@ footer{
 .resultContent{
     width: 100%;
     height: auto;
-    padding: 40px 0 12vh 0;
+    padding: 40px 0 10px 0;
     background-color: black;
     display: block;
-    position: relative;
-    /* bottom: 11vh;
-    left: 0; */
+    position: absolute;
+    bottom: 12vh;
+    left: 0;
 }
 .resultDiv{
     width: 55%;
@@ -1085,7 +1085,7 @@ footer{
     height: auto;
 }
 .resiltImg{
-    width: 55%;
+    width: 60%;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 0;
