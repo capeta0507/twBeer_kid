@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<style>
+    #width{
+        margin-left: 20px;
+        font-size: 50px;
+    }
+    #height{
+        margin-left: 20px;
+        font-size: 50px;
+    }
+</style>
+<body>
+    <div id="width"></div>
+    <div id="height"></div>
+    <script>
+        var getWidth = $(window).width();
+        var window_height = $( window ).height();
+        document.getElementById('width').innerText = getWidth;
+        document.getElementById('height').innerText = window_height;
+    </script>
+</body>
+</html>
