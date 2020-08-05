@@ -327,9 +327,14 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-y: top;
-    margin-top: -130px;
+    margin-top: -100px;
     line-height: 350px;
+    transition: all .5s;
     opacity: 0;
+}
+.indexBgAct{
+    opacity: 1;
+    margin-top: -130px;
 }
 .homeContent{
     width: 100%;
@@ -337,6 +342,9 @@ body{
     display: flex;
     margin: 0 auto;
     /* margin-top: 70px; */
+}
+.space{
+    justify-content: space-between;
 }
 .homeSlick{
     opacity: 0;
@@ -611,7 +619,7 @@ body{
 }
 .slickContent{
     width: 33%;
-    margin: 0 10px;
+    margin: 0;
     /* display: flex; */
 }
 .single-item-mb{
@@ -1315,6 +1323,9 @@ footer{
         bottom: 8%;
     }
     .indexBg{
+        margin-top: -90px;
+    }
+    .indexBgAct{
         margin-top: -110px;
     }
 }
@@ -1336,7 +1347,7 @@ footer{
     }
     .slickContent{
         width: 32%;
-        margin: 0 10px;
+        margin: 0;
         /* display: flex; */
     }
 }
@@ -1353,7 +1364,7 @@ footer{
     }
     .slickContent{
         width: 31%;
-        margin: 0 10px;
+        margin: 0;
         /* display: flex; */
     }
 }
@@ -1377,8 +1388,11 @@ footer{
         background-repeat: no-repeat;
         background-size: 100%;
         background-position-y: top;
-        margin-top: -160px;
+        margin-top: -100px;
         line-height: 350px;
+    }
+    .indexBgAct{
+        margin-top: -130px;
     }
     .canBlock {
         width: 80%;
@@ -1563,8 +1577,11 @@ footer{
         width: 100%;
         height: 100px;
         background-size: cover;
-        margin-top: -60px;
+        margin-top: -30px;
         line-height: 250px;
+    }
+    .indexBgAct{
+        margin-top: -60px;
     }
     .mtHome {
         margin-top: -30px;
@@ -1864,7 +1881,7 @@ footer{
         width: 50%;
         position: relative;
         margin: 0 auto;
-        margin-top: 60px;
+        margin-top: 10vh;
         margin-bottom: 15vh;
         /* cursor: pointer; */
     }
