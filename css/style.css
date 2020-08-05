@@ -121,7 +121,7 @@ body{
     }
   }
 .container{
-    width: 90%;
+    width: 95%;
 	margin: 0 auto;
 	position: relative;
 	padding: 5px 0;
@@ -135,7 +135,7 @@ body{
 	background-color: #262626;
 }
 .navfive{
-	width:35%;
+	width:40%;
 	height:0;
 	position: absolute;
 	top: 0;
@@ -228,13 +228,13 @@ body{
     z-index: 1;
 }
 .icon .menu-1{
-    width: 40px;
+    width: 45px;
 }
 .icon .menu-2{
-    width: 120px;
+    width: 220px;
 }
 .icon .menu-3{
-    width: 80px;
+    width: 65px;
 }
 .icon > a{
 	width: 30px;
@@ -287,10 +287,10 @@ body{
     font-weight: lighter;
 }
 .menuBlock li a {
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
-	display: block;
-	padding: 25px 0 18px 0;
+    display: block;
+    padding: 20px 0 14px 0;
     color: #fff;
     border-bottom: 1px solid white;
 }
@@ -1211,6 +1211,15 @@ footer{
     .game_outbg{
         background-position-y: -2%;
     }
+    .navfive{
+        width:40%;
+        height:0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-bottom:62px solid black;
+        border-left:35px solid transparent;
+    }
 }
 @media screen and (max-width: 1440px){
     .topic {
@@ -1385,7 +1394,6 @@ footer{
     }
     .container{
         width: 100%;
-        max-width: 600px;
         margin: 0 auto;
         position: relative;
         padding: 5px 0;
@@ -1471,10 +1479,10 @@ footer{
         font-weight: lighter;
     }
     .menuBlock li a {
-        width: 50%;
+        width: 75%;
         margin: 0 auto;
         display: block;
-        padding: 25px 0 18px 0;
+        padding: 20px 0 14px 0;
         color: #fff;
         border-bottom: 1px solid white;
     }
