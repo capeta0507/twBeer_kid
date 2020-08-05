@@ -649,16 +649,19 @@ body{
 .box .voice{
     width: 11.5%;
     position: absolute;
-    bottom: 11%;
-    left: 25%;
+    bottom: 13%;
+    left: 28%;
     cursor: pointer;
+}
+.box .voc13{
+    left: 27%;
 }
 .box .dialoectTexet{
     width: 50%;
     position: relative;
     margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 45px;
+    margin-top: 80px;
+    margin-bottom: 65px;
     /* cursor: pointer; */
 }
 .getdown{
@@ -1137,6 +1140,7 @@ footer{
 #myResult{
     width: 100%; 
     background-color: #fff;
+    box-shadow:0px 0px 9px #000;
 }
 .mbBlock{
     display: none;
@@ -1357,9 +1361,12 @@ footer{
     .box .voice {
         width: 11.5%;
         position: absolute;
-        bottom: 13%;
-        left: 25%;
+        bottom: 17%;
+        left: 28%;
         cursor: pointer;
+    }
+    .box .voc13{
+        left: 27%;
     }
 }
 @media screen and (max-width: 992px){
@@ -1847,15 +1854,18 @@ footer{
         width: 11.5%;
         position: absolute;
         bottom: 24.5%;
-        left: 25%;
+        left: 28%;
         cursor: pointer;
+    }
+    .box .voc13{
+        left: 27%;
     }
     .box .dialoectTexet{
         width: 50%;
         position: relative;
         margin: 0 auto;
-        margin-top: 30px;
-        margin-bottom: 17vh;
+        margin-top: 60px;
+        margin-bottom: 15vh;
         /* cursor: pointer; */
     }
     /* 結果 */
@@ -1979,7 +1989,7 @@ footer{
         width: 50%;
         position: relative;
         margin: 0 auto;
-        margin-top: 30px;
+        margin-top: 60px;
         margin-bottom: 15vh;
         /* cursor: pointer; */
     }
@@ -2001,8 +2011,11 @@ footer{
         width: 11.5%;
         position: absolute;
         bottom: 23%;
-        left: 25%;
+        left: 28%;
         cursor: pointer;
+    }
+    .box .voc13{
+        left: 27%;
     }
     .smoke_right{
         top: 100px;
@@ -2012,5 +2025,8 @@ footer{
         width: 90%;
         margin-top: 18vh;
         margin-bottom: 0;
+    }
+    .resiltImg{
+        width: 100%;
     }
 }
