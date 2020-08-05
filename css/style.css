@@ -488,6 +488,10 @@ body{
     left: 0%;
     opacity: 0;
 }
+.canActive{
+    opacity: 1 !important;
+    top: 0 !important;
+}
 .homeRight{
     width: 30%;
     display: flex;
@@ -657,19 +661,16 @@ body{
 .box .voice{
     width: 11.5%;
     position: absolute;
-    bottom: 13%;
-    left: 28%;
+    bottom: 8%;
+    left: 18%;
     cursor: pointer;
 }
-.box .voc13{
-    left: 27%;
-}
 .box .dialoectTexet{
-    width: 50%;
+    width: 100%;
     position: relative;
     margin: 0 auto;
-    margin-top: 80px;
-    margin-bottom: 65px;
+    /* margin-top: 80px;
+    margin-bottom: 65px; */
     /* cursor: pointer; */
 }
 .getdown{
@@ -895,14 +896,14 @@ footer{
 .mainContainer{
     width: 100%;
     /* max-width: 1200px; */
-    min-height: 100vh;
+    /* min-height: 100vh; */
     height: 100%;
     /* padding: 0 10px; */
     /* background-color: #d1d1d1; */
     /* background-color: #C9CACA; */
     margin: 0 auto;
     overflow: hidden;
-    position: relative;
+    position: absolute;
 }
 .genderCard{
     width: 30%;
@@ -965,7 +966,7 @@ footer{
     position: relative;
 }
 .topicImg .genderImg{
-    width: 50%;
+    width: 40%;
     position: absolute;
     /* z-index: 1; */
     margin-top: 1vh;
@@ -973,7 +974,7 @@ footer{
 }
 .activeGender{
     top: 10%;
-    left: 25%;
+    left: 30%;
 }
 .waitGender{
     top: 10%;
@@ -1026,7 +1027,7 @@ footer{
     text-align: center;
 }
 .topicBody{
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -1163,7 +1164,7 @@ footer{
     display: none;
 }
 .mbnoneFlex{
-    display: flex;
+    display: flex !important;
 }
 .bgDownmbBlock{
     display: none;
@@ -1289,9 +1290,6 @@ footer{
         width: 100%;
         height: 150px;
     }
-    .mainContainer{
-        margin-bottom: 0;
-    }
     .genderCard{
         width: 26%;
         margin: 0 auto;
@@ -1335,9 +1333,6 @@ footer{
     }
 }
 @media screen and (max-width: 1280px){
-    .mainContainer{
-        margin-bottom: 0;
-    }
     .ageBar {
         position: absolute;
         bottom: 3%;
@@ -1411,7 +1406,7 @@ footer{
         display: none;
     }
     .mbnoneFlex{
-        display: none;
+        display: none !important
     }
     .container{
         width: 100%;
@@ -1427,9 +1422,6 @@ footer{
     }
     .navfive{
         width:35%;
-    }
-    .mainContainer{
-        margin-bottom: 0;
     }
     .logo{
         width: 80px;
@@ -1539,7 +1531,7 @@ footer{
         background-position-y: -8%;
     }
     .question_title {
-        width: 90%;
+        width: 100%;
     }
     .checkTitle{
         width: 30%;
@@ -1701,12 +1693,12 @@ footer{
 
     .mainContainer{
         width: 100%;
-        max-width: 1000px;
-        min-height: 100vh;
+        /* max-width: 1000px; */
+        /* min-height: 100vh; */
         /* padding: 0 10px; */
         margin: 0 auto;
         overflow: hidden;
-        position: relative;
+        /* position: relative; */
     }
     .genderCard{
         width: 70%;
@@ -1744,7 +1736,7 @@ footer{
         position: relative;
     }
     .topicImg .genderImg{
-        width: 100%;
+        width: 65%;
         position: absolute;
         /* z-index: 1; */
         margin-top: 0;
@@ -1752,7 +1744,7 @@ footer{
     }
     .activeGender{
         top: 10%;
-        left: 0%;
+        left: 18%;
     }
     .waitGender{
         top: 10%;
@@ -1793,7 +1785,7 @@ footer{
         text-align: center;
     }
     .topicBody{
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -1870,19 +1862,18 @@ footer{
     .box .voice{
         width: 11.5%;
         position: absolute;
-        bottom: 24.5%;
-        left: 28%;
+        bottom: 22%;
+        left: 23%;
         cursor: pointer;
     }
     .box .voc13{
         left: 27%;
     }
     .box .dialoectTexet{
-        width: 50%;
+        width: 95%;
+        padding-bottom: 5%;
         position: relative;
         margin: 0 auto;
-        margin-top: 10vh;
-        margin-bottom: 15vh;
         /* cursor: pointer; */
     }
     /* 結果 */
@@ -1979,12 +1970,21 @@ footer{
     }    
     .mainContainer{
         width: 100%;
-        max-width: 500px;
-        min-height: 100vh;
+        /* max-width: 500px; */
+        /* min-height: 100vh; */
         /* padding: 0 10px; */
         margin: 0 auto;
         overflow: hidden;
-        position: relative;
+        /* position: relative; */
+    }
+    .topicBody{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .question_title {
+        width: 90%;
     }
     .iptImg{
         width: 48%;
@@ -2003,11 +2003,10 @@ footer{
         height: 163px;
     }
     .box .dialoectTexet{
-        width: 50%;
+        width: 95%;
+        padding-bottom: 5%;
         position: relative;
         margin: 0 auto;
-        margin-top: 60px;
-        margin-bottom: 15vh;
         /* cursor: pointer; */
     }
     .canImg2 {
@@ -2027,23 +2026,35 @@ footer{
     .box .voice {
         width: 11.5%;
         position: absolute;
-        bottom: 23%;
-        left: 28%;
+        bottom: 22%;
+        left: 23%;
         cursor: pointer;
     }
     .box .voc13{
         left: 27%;
     }
     .smoke_right{
-        top: 100px;
+        top: 120px;
         right: -45px;
     }
     .genderCard{
-        width: 90%;
-        margin-top: 18vh;
+        width: 80%;
+        margin-top: 11vh;
         margin-bottom: 0;
     }
     .resiltImg{
-        width: 100%;
+        width: 80%;
+    }
+    .topicImg .leftImg{
+        width: 20%;
+        position: absolute;
+        top: 10%;
+        left: 2%;
+    }
+    .topicImg .rightImg{
+        width: 20%;
+        position: absolute;
+        top: 10%;
+        right: 2%;
     }
 }
