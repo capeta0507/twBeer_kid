@@ -371,6 +371,7 @@ body{
     height: auto;
     /* margin: 0 auto; */
     position: relative;
+    z-index: 5;
 }
 .homeSelect .mbCan{
     width: 100%;
@@ -505,6 +506,7 @@ body{
 .homeRight .homeLogo{
     width: 35%;
     position: relative;
+    z-index: 10;
 }
 .homeLogo{
     transition: all .5s;
