@@ -329,6 +329,7 @@ body{
     background-position-y: top;
     margin-top: -130px;
     line-height: 350px;
+    opacity: 0;
 }
 .homeContent{
     width: 100%;
@@ -336,6 +337,10 @@ body{
     display: flex;
     margin: 0 auto;
     /* margin-top: 70px; */
+}
+.homeSlick{
+    opacity: 0;
+    transition: all .5s;
 }
 .pd01{
     padding-top: 90px;
@@ -372,6 +377,8 @@ body{
     float: right;
     display: flex;
     margin-right: 150px;
+    opacity: 0;
+    transition: all .5s;
 }
 .smoke_left{
     width: 90%;
@@ -487,6 +494,10 @@ body{
     width: 35%;
     position: relative;
 }
+.homeLogo{
+    transition: all .5s;
+    opacity: 0;
+}
 .homeRight .homeTxt img{
     width: 100%;
     position: absolute;
@@ -507,6 +518,8 @@ body{
     display: flex;
     bottom: 8%;
     left: 33%;
+    transition: all .5s;
+    opacity: 0;
 }
 .gameLink a img{
     width: 100%;
@@ -516,6 +529,8 @@ body{
     margin: 30px 0 0 0;
     padding: 15px 0;
     position: relative;
+    transition: all .5s;
+    opacity: 0;
 }
 #myDialect{
     position: absolute;
@@ -1146,6 +1161,8 @@ footer{
 }
 .mbIdx_btn{
     display: none;
+    transition: all .5s;
+    opacity: 0;
 }
 @media screen and (max-width: 1920px){
     .mbContain{

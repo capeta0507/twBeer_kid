@@ -62,10 +62,10 @@ $('.mq2_5').hover(function(){
 },function(){
     $('.mq2_5 img').attr("src", "img/question/male/male_q205.png");
 });
-$('.mq1_6').hover(function(){
-    $('.mq1_6 img').attr("src", "img/question/male/male_q206_hover.png");
+$('.mq2_6').hover(function(){
+    $('.mq2_6 img').attr("src", "img/question/male/male_q206_hover.png");
 },function(){
-    $('.mq1_6 img').attr("src", "img/question/male/male_q206.png");
+    $('.mq2_6 img').attr("src", "img/question/male/male_q206.png");
 });
 
 $('.mq3_1').hover(function(){
