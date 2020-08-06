@@ -467,14 +467,15 @@
     // var baseUrl = setting.base_url;
     // console.log(baseUrl)
     var web = location.host
-    console.log('web', web)
+    var real = web + 'index.html?openExternalBrowser=1'
+    console.log('web', real)
 
     var u = navigator.userAgent;
     isLineApp = u.indexOf("Line") > -1;
     console.log(isLineApp)
     if (isLineApp) {
       alert('手機用戶請另外點選右上選單，以其他應用程式開啟Chrome瀏覽器進行最佳體驗。');
-     // window.location = web + '/index.html?openExternalBrowser=1'
+     // window.location = web + 'index.html?openExternalBrowser=1'
     }
   }
 </script>
