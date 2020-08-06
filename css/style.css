@@ -2134,7 +2134,7 @@ footer{
     .topicPhoto .genderImg{
         width: 100%;
         position: absolute;
-        margin-top: 50px;
+        margin-top: 0;
         transition: all .7s;
     }
     .topicImg{
@@ -2150,7 +2150,7 @@ footer{
     .topicPhoto .genderImg{
         width: 90%;
         position: absolute;
-        margin-top: 50px;
+        margin-top: 0;
         transition: all .7s;
     }
     .activeGender{
@@ -2162,7 +2162,7 @@ footer{
     .topicPhoto .genderImg{
         width: 70%;
         position: absolute;
-        margin-top: 50px;
+        margin-top: 0;
         transition: all .7s;
     }
     .activeGender{
