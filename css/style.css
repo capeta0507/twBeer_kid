@@ -2185,4 +2185,14 @@ footer{
         bottom: 12vh;
         left: 0;
     }
+    .topicPhoto .genderImg{
+        width: 60%;
+        position: absolute;
+        margin-top: 0;
+        transition: all .7s;
+    }
+    .activeGender{
+        bottom: 95%;
+        left: 20%;
+    }
 }

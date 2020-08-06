@@ -301,18 +301,18 @@
   var getanyTime = +new Date("2020/8/7 00:00:00");
   // 判斷是否已經驗證年齡
   var isOver18 = $.cookie('isOver18');
-  if (isOver18 == null) {
-    location.href = 'age-confirm.html';
-  }
-  // $(document).ready(function(){
-  //   if(fullTime < getanyTime){
-  //     location.href = 'waiting.html';
-  //   } else {
-  //     if (isOver18 == null) {
-  //       location.href = 'age-confirm.html';
-  //     }
-  //   }
-  // })
+  // if (isOver18 == null) {
+  //   location.href = 'age-confirm.html';
+  // }
+  $(document).ready(function(){
+    if(fullTime < getanyTime){
+      location.href = 'waiting.html';
+    } else {
+      if (isOver18 == null) {
+        location.href = 'age-confirm.html';
+      }
+    }
+  })
   var myVoice = document.getElementById('myVoice');
   window.addEventListener("load", function(){
     const loader = document.querySelector('.loader');
