@@ -635,7 +635,7 @@ $('.get-result-1').on('click', function () {
 
     FB.getLoginStatus(function (response) {
       if (response.status === 'connected') {
-        console.log('登入中');
+        // console.log('登入中');
         $('.check-block').fadeOut(500, function () {
             $('.loading-block').fadeIn(300);
             $('footer').addClass('footer_w');
