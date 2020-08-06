@@ -450,7 +450,7 @@ body{
 }
 /* 結果頁 */
 .canImg2{
-    width: 13.5%;
+    width: 13%;
     position: relative;
     transition: all .7s;
 }
@@ -1457,7 +1457,7 @@ footer{
         position: relative;
     }
     .canImg2{
-        width: 13.5%;
+        width: 13%;
         position: relative;
         transition: all .7s;
     }
