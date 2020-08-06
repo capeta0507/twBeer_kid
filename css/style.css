@@ -534,6 +534,7 @@ body{
     left: 33%;
     transition: all .5s;
     opacity: 0;
+    z-index: 5;
 }
 .gameLink a img{
     width: 100%;
@@ -974,16 +975,34 @@ footer{
     margin-top: 1vh;
     transition: all .7s;
 }
+.topicPhoto{
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.topicPhoto .genderImg{
+    width: 40%;
+    position: absolute;
+    /* z-index: 1; */
+    margin-top: 1vh;
+    transition: all .7s;
+}
+.topicPhoto .genderImg img{
+    width: 100%;
+    height: auto;
+}
 .activeGender{
-    top: 10%;
+    bottom: 0%;
     left: 30%;
 }
 .waitGender{
-    top: 10%;
+    bottom: 0%;
     left: 200%;
 }
 .agoGender{
-    top: 10%;
+    bottom: 0%;
     left: -130%;
 }
 .topicImg .genderImg img{
@@ -1251,6 +1270,7 @@ footer{
     }
     .genderCard{
         width: 26%;
+        margin-top: 19vh;
     }
     .topicContent {
         width: 100%;
@@ -1327,6 +1347,20 @@ footer{
     }
     .indexBgAct{
         margin-top: -110px;
+    }
+    .topicPhoto {
+        width: 100%;
+        height: 68%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .topicPhoto .genderImg {
+        width: 28%;
+    }
+    .activeGender {
+        bottom: 0%;
+        left: 35%;
     }
 }
 @media screen and (max-width: 1366px){
@@ -1704,7 +1738,11 @@ footer{
     }
     .genderCard{
         width: 70%;
-        margin-top: 10vh;
+        position: absolute;
+        top: 50%;
+        margin-top: -45%;
+        left: 50%;
+        margin-left: -35%;
         margin-bottom: 0;
     }
     .genderSelect{
@@ -1744,16 +1782,23 @@ footer{
         margin-top: 0;
         transition: all .7s;
     }
+    .topicPhoto .genderImg{
+        width: 65%;
+        position: absolute;
+        /* z-index: 1; */
+        margin-top: 0;
+        transition: all .7s;
+    }
     .activeGender{
-        top: 10%;
+        bottom: 0%;
         left: 18%;
     }
     .waitGender{
-        top: 10%;
+        bottom: 0%;
         left: 106%;
     }
     .agoGender{
-        top: 10%;
+        bottom: 0%;
         left: -106%;
     }
     .topicImg .leftImg{
@@ -1964,7 +2009,7 @@ footer{
     }
     .topicContent{
         width: 100%;
-        height: 250px;
+        height: 240px;
         background-color: black;
         position: absolute;
         bottom: 12vh;
@@ -2041,8 +2086,12 @@ footer{
     }
     .genderCard{
         width: 80%;
-        margin-top: 11vh;
+        margin-top: -50%;
         margin-bottom: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -40%;
     }
     .resiltImg{
         width: 80%;
@@ -2065,6 +2114,19 @@ footer{
         margin-top: 50px;
         transition: all .7s;
     }
+    .topicPhoto {
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .topicPhoto .genderImg{
+        width: 65%;
+        position: absolute;
+        margin-top: 50px;
+        transition: all .7s;
+    }
     .topicImg{
         width: 100%;
         position: relative;
@@ -2076,5 +2138,21 @@ footer{
         position: absolute;
         margin-top: 0px;
         transition: all .7s;
+    }
+    .topicPhoto .genderImg{
+        width: 65%;
+        position: absolute;
+        margin-top: 0;
+        transition: all .7s;
+    }
+}
+@media screen and (max-width: 400px){
+    .topicContent{
+        width: 100%;
+        height: 230px;
+        background-color: black;
+        position: absolute;
+        bottom: 12vh;
+        left: 0;
     }
 }
