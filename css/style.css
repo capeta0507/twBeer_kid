@@ -1337,11 +1337,11 @@ footer{
         justify-content: space-between;
     }
     .waitGender{
-        bottom: 10%;
+        bottom: 0%;
         left: 140%;
     }
     .agoGender{
-        bottom: 10%;
+        bottom: 0%;
         left: -140%;
     }
     .ageBar{
