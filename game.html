@@ -29,7 +29,7 @@
   <div class="loader">
     <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> 
   </div>
-  <div class="mainContent">
+  <div class="mainContent2">
     <div class="nav">
       <div class="container">
         <div class="logo">
@@ -160,6 +160,9 @@
             </div>
           </div>
           <div class="topicBlock qa_card02 waitTopic">
+            <div class="backQuest" onclick="backQuestion(1)">
+              <img src="img/question/back_question.png" alt="">
+            </div>
             <div class="question_title">
               <img src="img/question/male_question02.png" alt="">
             </div>
@@ -185,6 +188,9 @@
             </div>
           </div>
           <div class="topicBlock qa_card03 waitTopic">
+            <div class="backQuest" onclick="backQuestion(2)">
+              <img src="img/question/back_question.png" alt="">
+            </div>
             <div class="question_title">
               <img src="img/question/male_question03.png" alt="">
             </div>
@@ -210,6 +216,9 @@
             </div>
           </div>
           <div class="topicBlock qa_card04 waitTopic">
+            <div class="backQuest" onclick="backQuestion(3)">
+              <img src="img/question/back_question.png" alt="">
+            </div>
             <div class="question_title">
               <img src="img/question/male_question04.png" alt="">
             </div>
@@ -235,6 +244,9 @@
             </div>
           </div>
           <div class="topicBlock qa_card05 waitTopic">
+            <div class="backQuest" onclick="backQuestion(4)">
+              <img src="img/question/back_question.png" alt="">
+            </div>
             <div class="question_title">
               <img src="img/question/male_question05.png" alt="">
             </div>
@@ -315,6 +327,9 @@
             </div>
           </div>
           <div class="topicBlock qa_card02 waitTopic">
+            <div class="backQuest" onclick="backQuestion(1)">
+              <img src="img/question/back_question.png" alt="">
+            </div>
             <div class="question_title">
               <img src="img/question/female_question02.png" alt="">
             </div>
@@ -340,6 +355,9 @@
             </div>
           </div>
           <div class="topicBlock qa_card03 waitTopic">
+            <div class="backQuest" onclick="backQuestion(2)">
+              <img src="img/question/back_question.png" alt="">
+            </div>
             <div class="question_title">
               <img src="img/question/female_question03.png" alt="">
             </div>
@@ -365,6 +383,9 @@
             </div>
           </div>
           <div class="topicBlock qa_card04 waitTopic">
+            <div class="backQuest" onclick="backQuestion(3)">
+              <img src="img/question/back_question.png" alt="">
+            </div>
             <div class="question_title mbBlock">
               <img src="img/question/female_question04.png" alt="">
             </div>
@@ -393,6 +414,9 @@
             </div>
           </div>
           <div class="topicBlock qa_card05 waitTopic">
+            <div class="backQuest" onclick="backQuestion(4)">
+              <img src="img/question/back_question.png" alt="">
+            </div>
             <div class="question_title">
               <img src="img/question/female_question05.png" alt="">
             </div>
@@ -605,6 +629,42 @@
           },500)
         },500)
       },400)
+    }
+  }
+  // 回上一題
+  function backQuestion(x){
+    if(x == 1){
+      $('.qa_card02').removeClass('activityTopic').addClass('waitTopic');
+      $('.ge_card02').removeClass('activeGender').addClass('waitGender');
+      // $('.ge_card02').css('left', '140%');
+      setTimeout(function(){
+        $('.qa_card01').removeClass('agoTopic').addClass('activityTopic');
+        $('.ge_card01').removeClass('agoGender').addClass('activeGender');
+      },1000)
+    }
+    if(x == 2){
+      $('.qa_card03').removeClass('activityTopic').addClass('waitTopic');
+      $('.ge_card03').removeClass('activeGender').addClass('waitGender');
+      setTimeout(function(){
+        $('.qa_card02').removeClass('agoTopic').addClass('activityTopic');
+        $('.ge_card02').removeClass('agoGender').addClass('activeGender');
+      },1000)
+    }
+    if(x == 3){
+      $('.qa_card04').removeClass('activityTopic').addClass('waitTopic');
+      $('.ge_card04').removeClass('activeGender').addClass('waitGender');
+      setTimeout(function(){
+        $('.qa_card03').removeClass('agoTopic').addClass('activityTopic');
+        $('.ge_card03').removeClass('agoGender').addClass('activeGender');
+      },1000)
+    }
+    if(x == 4){
+      $('.qa_card05').removeClass('activityTopic').addClass('waitTopic');
+      $('.ge_card05').removeClass('activeGender').addClass('waitGender');
+      setTimeout(function(){
+        $('.qa_card04').removeClass('agoTopic').addClass('activityTopic');
+        $('.ge_card04').removeClass('agoGender').addClass('activeGender');
+      },1000)
     }
   }
   // 重新開始

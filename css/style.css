@@ -303,6 +303,10 @@ body{
     min-height: 100vh;
     background-color: #C9CACA;
 }
+.mainContent2{
+    width: 100%;
+    background-color: #C9CACA;
+}
 .ageWhite{
     background-color: #fff !important;
 }
@@ -1071,6 +1075,16 @@ footer{
     width: 100%;
     height: auto;
 }
+.backQuest{
+    width: 6%;
+    position: absolute;
+    top: 20%;
+    right: 5.6%;
+    cursor: pointer;
+}
+.backQuest img{
+    width: 100%;
+}
 
 /* 結果 */
 .check-block, .result-block, .loading-block{
@@ -1204,7 +1218,7 @@ footer{
         height: 190px;
     }
     .waitGender{
-        top: 10%;
+        bottom: 90%;
         left: 130%;
     }
     .ageBar{
@@ -1564,6 +1578,10 @@ footer{
     .mainContent{
         width: 100%;
         min-height: 100vh;
+        background-color: #C9CACA;
+    }
+    .mainContent2{
+        width: 100%;
         background-color: #C9CACA;
     }
     .mbContain{
@@ -1993,6 +2011,13 @@ footer{
         margin-top: 20px;
         margin-bottom: 30px;
     }
+    .backQuest {
+        width: 100px;
+        position: absolute;
+        top: 96%;
+        right: 42%;
+        cursor: pointer;
+    }
 }
 @media screen and (max-width: 500px){
     .mbnone500{
@@ -2062,7 +2087,7 @@ footer{
     .iptImg{
         width: 48%;
         height: auto;
-        margin: 5px 0;
+        margin: 0;
         cursor: pointer;
     }
     .game_outbg{
@@ -2154,6 +2179,10 @@ footer{
     .activeGender{
         bottom: 95%;
         left: 0%;
+    }
+    .backQuest{
+        width: 17%;
+        top: 98%;
     }
 }
 @media screen and (max-width: 500px) and (max-height: 730px){
