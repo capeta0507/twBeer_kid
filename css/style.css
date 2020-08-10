@@ -234,7 +234,7 @@ body{
     width: 220px;
 }
 .icon .menu-3{
-    width: 65px;
+    width: 136px;
 }
 .icon > a{
 	width: 30px;
@@ -1393,6 +1393,9 @@ footer{
     }
 }
 @media screen and (max-width: 1366px){
+    .navfive {
+        width: 46%;
+    }
     .icon > a{
         margin-right: 15px;
     }
@@ -1449,6 +1452,9 @@ footer{
     }
     .box .voc13{
         left: 27%;
+    }
+    .navfive {
+        width: 50%;
     }
 }
 @media screen and (max-width: 992px){
